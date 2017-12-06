@@ -343,17 +343,17 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_Bandit_Soldier_MoneyGain		= 50;						// The amount of Poptabs gained for killing a bandit soldier
 	DMS_Bandit_Soldier_RepGain			= 10;						// The amount of Respect gained for killing a bandit soldier
 	DMS_Bandit_Soldier_RankGain			= 15;
-	DMS_Bandit_Soldier_SpawnMoney		= 50;						// The amount of Poptabs carried by a bandit soldier
+	DMS_Bandit_Soldier_SpawnMoney		= 100;						// The amount of Poptabs carried by a bandit soldier
 
 	DMS_Bandit_Static_MoneyGain			= 75;						// The amount of Poptabs gained for killing a bandit static gunner
 	DMS_Bandit_Static_RepGain			= 15;						// The amount of Respect gained for killing a bandit static gunner
 	DMS_Bandit_Static_RankGain			= 30;
-	DMS_Bandit_Static_SpawnMoney		= 75;						// The amount of Poptabs carried by a bandit static gunner
+	DMS_Bandit_Static_SpawnMoney		= 175;						// The amount of Poptabs carried by a bandit static gunner
 
 	DMS_Bandit_Vehicle_MoneyGain		= 100;						// The amount of Poptabs gained for killing a bandit vehicle crew member
 	DMS_Bandit_Vehicle_RepGain			= 25;						// The amount of Respect gained for killing a bandit vehicle crew member
 	DMS_Bandit_Vehicle_RankGain			= 50;
-	DMS_Bandit_Vehicle_SpawnMoney		= 100;						// The amount of Poptabs carried by a bandit vehicle crew member
+	DMS_Bandit_Vehicle_SpawnMoney		= 225;						// The amount of Poptabs carried by a bandit vehicle crew member
 
 /* DonkeyPunchDMS Custom Settings for Hero AI*/
 	DMS_Hero_Soldier_MoneyGain			= 100;						// The amount of Poptabs gained for killing a hero soldier
@@ -426,9 +426,9 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_survivorSide					= CIV;						// The side (team) that AI Survivor will spawn on
 
 	DMS_clear_AI_body					= false;					// Clear AI body as soon as they die
-	DMS_clear_AI_body_chance			= 50;						// Percentage chance that AI bodies will be cleared when they die
+	DMS_clear_AI_body_chance			= 0;						// Percentage chance that AI bodies will be cleared when they die
 	DMS_ai_disable_ramming_damage 		= true;						// Disables damage due to ramming into AI. !!!NOTE: THIS WILL NOT BE RELIABLE WITH "DMS_ai_offload_to_client"!!!
-	DMS_remove_roadkill					= true; 					// Remove gear from AI bodies that are roadkilled
+	DMS_remove_roadkill					= false; 					// Remove gear from AI bodies that are roadkilled
 	DMS_remove_roadkill_chance			= 50;						// Percentage chance that roadkilled AI bodies will be deleted
 	DMS_explode_onRoadkill				= true;						// Whether or not to spawn an explosion when an AI gets run over. It will likely take out the 2 front wheels. Should help mitigate the ineffective AI vs. striders issue ;)
 	DMS_RemoveNVG						= false;					// Remove NVGs from AI bodies
@@ -479,10 +479,10 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_AI_WP_Radius_base				= 5;						// Waypoint radius for AI in bases.
 	DMS_AI_WP_Radius_heli				= 500;						// Waypoint radius for AI in helis.
 
-	DMS_AI_destroyVehicleChance			= 75;						// Percent chance that an AI vehicle will be destroyed after the AI have been killed. Set to 100 for always, or 0 for never.
+	DMS_AI_destroyVehicleChance			= 10;						// Percent chance that an AI vehicle will be destroyed after the AI have been killed. Set to 100 for always, or 0 for never.
 
 	DMS_AI_destroyStaticWeapon			= true;						// Whether or not to destroy static HMGs after AI death.
-	DMS_AI_destroyStaticWeapon_chance	= 95;						// Percent chance that a static weapon will be destroyed (only applied if "DMS_AI_destroyStaticWeapon" is true)
+	DMS_AI_destroyStaticWeapon_chance	= 50;						// Percent chance that a static weapon will be destroyed (only applied if "DMS_AI_destroyStaticWeapon" is true)
 
 	DMS_static_weapons =				[							// Static weapons for AI
 											"O_HMG_01_high_F"
@@ -1222,7 +1222,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 										];
 	DMS_RareLootChance					= 10;						// Percentage Chance to spawn rare loot in any crate | Default: 10%
 
-	// Vehicles
+	// Vehicles (We should really look into changing these later and maybe adding CUP vehicles.)
 	DMS_ArmedVehicles =					[							// List of armed vehicles that can spawn
 											#ifdef USE_APEX_VEHICLES
 											"B_T_LSV_01_armed_F",
