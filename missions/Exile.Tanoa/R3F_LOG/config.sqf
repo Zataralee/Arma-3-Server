@@ -43,8 +43,8 @@ R3F_LOG_CFG_lock_objects_mode = "none";
  * Set to -1 to deny the unlock of objects.
  * See also the config variable R3F_LOG_CFG_lock_objects_mode.
  * 
- * Défini la durée (en secondes) du compte-à-rebours pour déverrouiller un objet.
- * Mettre à -1 pour qu'on ne puisse pas déverrouiller les objets.
+ * DÃ©fini la durÃ©e (en secondes) du compte-Ã -rebours pour dÃ©verrouiller un objet.
+ * Mettre Ã  -1 pour qu'on ne puisse pas dÃ©verrouiller les objets.
  * Voir aussi la variable de configiration R3F_LOG_CFG_lock_objects_mode.
  */
 R3F_LOG_CFG_unlock_objects_timer = 30;
@@ -55,8 +55,8 @@ R3F_LOG_CFG_unlock_objects_timer = 30;
  * Define if movable objects with no gravity simulation can be set in height over the ground (no ground contact).
  * The no gravity objects corresponds to most of decoration and constructions items.
  * 
- * Défini si les objets déplaçable sans simulation de gravité peuvent être position en hauteur sans être contact avec le sol.
- * Les objets sans gravité correspondent à la plupart des objets de décors et de construction.
+ * DÃ©fini si les objets dÃ©plaÃ§able sans simulation de gravitÃ© peuvent Ãªtre position en hauteur sans Ãªtre contact avec le sol.
+ * Les objets sans gravitÃ© correspondent Ã  la plupart des objets de dÃ©cors et de construction.
  */
 R3F_LOG_CFG_no_gravity_objects_can_be_set_in_height_over_ground = true;
 
@@ -66,8 +66,8 @@ R3F_LOG_CFG_no_gravity_objects_can_be_set_in_height_over_ground = true;
  * Automatic language selection according to the game language.
  * New languages can be easily added (read below).
  * 
- * Sélection automatique de la langue en fonction de la langue du jeu.
- * De nouveaux langages peuvent facilement être ajoutés (voir ci-dessous).
+ * SÃ©lection automatique de la langue en fonction de la langue du jeu.
+ * De nouveaux langages peuvent facilement Ãªtre ajoutÃ©s (voir ci-dessous).
  */
 R3F_LOG_CFG_language = switch (language) do
 {
@@ -117,7 +117,7 @@ R3F_LOG_CFG_string_condition_allow_logistics_on_this_client = "true";
  * Or based on the profile name : "profileName in [""john"", ""jack"", ""james""]"
  * Or only for the server admin : "serverCommandAvailable "#kick"""
  * Note that quotes of the strings inside the string condition must be doubled.
- * Note : if the condition depends of the aimed objects/véhicule, you can use the command cursorTarget
+ * Note : if the condition depends of the aimed objects/vÃ©hicule, you can use the command cursorTarget
  * Note also that the condition is evaluted in real time, so it can use condition depending on the mission progress :
  * "alive officer && taskState task1 == ""Succeeded"""
  * To allow the creation factory to everyone, just set the condition to "true".
@@ -153,7 +153,7 @@ R3F_LOG_CFG_string_condition_allow_creation_factory_on_this_client = "true";
 
 /**
  * List of class names of ground vehicles which can tow objects.
- * Liste des noms de classes des véhicules terrestres pouvant remorquer des objets.
+ * Liste des noms de classes des vÃ©hicules terrestres pouvant remorquer des objets.
  */
 R3F_LOG_CFG_can_tow =  //R3F_LOG_CFG_can_tow +
 [
@@ -174,7 +174,7 @@ R3F_LOG_CFG_can_be_towed = //R3F_LOG_CFG_can_be_towed +
 
 /**
  * List of class names of helicopters which can lift objects.
- * Liste des noms de classes des hélicoptères pouvant héliporter des objets.
+ * Liste des noms de classes des hÃ©licoptÃ¨res pouvant hÃ©liporter des objets.
  */
 R3F_LOG_CFG_can_lift = //R3F_LOG_CFG_can_lift +
 [
@@ -183,7 +183,7 @@ R3F_LOG_CFG_can_lift = //R3F_LOG_CFG_can_lift +
 
 /**
  * List of class names of objects which can be lifted.
- * Liste des noms de classes des objets héliportables.
+ * Liste des noms de classes des objets hÃ©liportables.
  */
 R3F_LOG_CFG_can_be_lifted = //R3F_LOG_CFG_can_be_lifted +
 [
@@ -205,8 +205,8 @@ R3F_LOG_CFG_can_be_lifted = //R3F_LOG_CFG_can_be_lifted +
  * List of class names of vehicles or cargo objects which can transport objects.
  * The second element of the nested arrays is the load capacity (in relation with the capacity cost of the objects).
  * 
- * Liste des noms de classes des véhicules ou "objets contenant" pouvant transporter des objets.
- * Le deuxième élément des sous-tableaux est la capacité de chargement (en relation avec le coût de capacité des objets).
+ * Liste des noms de classes des vÃ©hicules ou "objets contenant" pouvant transporter des objets.
+ * Le deuxiÃ¨me Ã©lÃ©ment des sous-tableaux est la capacitÃ© de chargement (en relation avec le coÃ»t de capacitÃ© des objets).
  */
 R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 [
@@ -218,7 +218,7 @@ R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
  * The second element of the nested arrays is the cost capacity (in relation with the capacity of the vehicles).
  * 
  * Liste des noms de classes des objets transportables.
- * Le deuxième élément des sous-tableaux est le coût de capacité (en relation avec la capacité des véhicules).
+ * Le deuxiÃ¨me Ã©lÃ©ment des sous-tableaux est le coÃ»t de capacitÃ© (en relation avec la capacitÃ© des vÃ©hicules).
  */
 R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 [
@@ -229,9 +229,9 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 
 /**
  * List of class names of objects which can be carried and moved by a player.
- * Liste des noms de classes des objets qui peuvent être portés et déplacés par le joueur.
+ * Liste des noms de classes des objets qui peuvent Ãªtre portÃ©s et dÃ©placÃ©s par le joueur.
  */
 R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 [
-	// e.g. : "MyMovableObjectClassName1", "MyMovableObjectClassName2"
+	"addons_config\A3_vanilla\reammobox_f.sqf"
 ];
