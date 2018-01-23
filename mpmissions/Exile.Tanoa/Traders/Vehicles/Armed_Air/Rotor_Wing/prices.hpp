@@ -86,11 +86,27 @@ class CUP_B_AH6J_AT_USA                             	           { quality = 5; p
 class CUP_B_AH6J_MP_USA                                 	   { quality = 5; price = 300000; };
 class CUP_B_AH6J_Escort19_USA                                      { quality = 5; price = 300000; };
 
+///////////////////////////////////////////////////////////////////////////////
+// UH-80 Ghost Hawk
+///////////////////////////////////////////////////////////////////////////////
+class B_Heli_Transport_01_F					   { quality = 5; price = 230000; };
+class B_Heli_Transport_01_camo_F				   { quality = 5: price = 230000; };
+class B_CTRG_Heli_Transport_01_sand_F				   { quality = 5; price = 230000; };
+class B_CTRG_Heli_Transport_01_tropic_F				   { quality = 5; price = 230000; };
+
+///////////////////////////////////////////////////////////////////////////////
+// Mi-24 Superhind mk.IV
+///////////////////////////////////////////////////////////////////////////////
+class CUP_I_Mi24_Mk4_AAF					   { quality = 7; price = 550000; };
+class CUP_O_Mi24_Mk4_CSAT_T					   { quality = 7; price = 550000; };
+class CUP_I_Mi24_Mk4_ION					   { quality = 7; price = 550000; };
+class CUP_I_Mi24_Mk4_UN						   { quality = 7; price = 550000; };
+
 //More
 	
-class B_Heli_Attack_01_F                                      		{ quality = 7; price = 500000; };
+class B_Heli_Attack_01_F                                      	    { quality = 7; price = 500000; };
 class B_Heli_Attack_01_dynamicLoadout_F                             { quality = 7; price = 500000; };
-class O_Heli_Attack_02_F                                      		{ quality = 7; price = 550000; };
+class O_Heli_Attack_02_F                                      	    { quality = 7; price = 550000; };
 class O_Heli_Attack_02_black_F                                      { quality = 7; price = 550000; };
 class O_Heli_Attack_02_dynamicLoadout_F                             { quality = 7; price = 550000; };
 
