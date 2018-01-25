@@ -373,6 +373,24 @@ class CraftConcreteDoorway: Exile_AbstractCraftingRecipe
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
 };
+class ScrapConcreteDoorway: Exile_AbstractCraftingRecipe  //Lets see if this works. Mike is so freaking smart. <3
+{
+	name = "Scrap Concrete Doorway";
+	pictureItem = "Exile_Item_ConcreteDoorwayKit"; // Saber, make me an icon!
+	requiresConcreteMixer = false;
+	requiredInteractionModelGroup = "WorkBench";
+	returnedItems[] = 
+	{
+		{2, "Exile_Item_Cement"},
+		{2, "Exile_Item_Sand"},
+		{2, "Exile_Item_MetalPole"}
+	};
+	components[] = 
+	{
+		{1, "Exile_Item_ConcreteDoorwayKit"},
+	};
+	tools[] = {"Exile_Item_Grinder"};
+};
 class CraftConcreteFloor: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Concrete Floor";
