@@ -2022,7 +2022,7 @@ class CfgExileCustomCode
 	ExileClient_gui_selectSpawnLocation_event_onSpawnButtonClick = "overrides\ExileClient_gui_selectSpawnLocation_event_onSpawnButtonClick.sqf";
 	ExileClient_gui_selectSpawnLocation_show = "overrides\ExileClient_gui_selectSpawnLocation_show.sqf";
 	
-	// Exile Client Overrides
+	// Scav System
 	ExileClient_object_player_initialize = "Exile_Client_Overrides\ExileClient_object_player_initialize.sqf";
 	
 	//Rocket Launcher Fix
