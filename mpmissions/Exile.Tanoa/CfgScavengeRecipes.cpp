@@ -20,5 +20,92 @@ class Exile_ScavengeCraftingRecipe
 
 class CfgScavengeRecipes
 {
-	
+	class ScavengeFillEmptyPlasticBottleWithDirtyWater: Exile_ScavengeCraftingRecipe
+	{
+		returnedItems[] =
+		{
+			{1, "Exile_Item_PlasticBottleDirtyWater"}
+		};
+		components[] =
+		{
+			{1, "Exile_Item_PlasticBottleEmpty"}
+		};
+	};
+	class ScavengeFillEmptyWaterCanisterWithDirtyWater: Exile_ScavengeCraftingRecipe
+	{
+		returnedItems[] =
+		{
+			{1, "Exile_Item_WaterCanisterDirtyWater"}
+		};
+		components[] =
+		{
+			{1, "Exile_Item_WaterCanisterEmpty"}
+		};
+	};
+	class ScavengeFillEmptyWaterCanteenWithDirtyWater: Exile_ScavengeCraftingRecipe
+	{
+		returnedItems[] =
+		{
+			{1, "Exitem_canteen_dirty"}
+		};
+		components[] =
+		{
+			{1, "Exitem_canteen"}
+		};
+	};
+	class ScavengeFillEmptyFuelCanisterWithFuel: Exile_ScavengeCraftingRecipe
+	{
+		returnedItems[] =
+		{
+			{1, "Exile_Item_FuelCanisterFull"}
+		};
+		components[] =
+		{
+			{1, "Exile_Item_FuelCanisterEmpty"}
+		};
+	};
+	class ScavengeDestroyConcrete: Exile_ScavengeCraftingRecipe
+	{
+		returnedItems[] =
+		{
+			{1, "Exile_Item_Cement"}
+		};
+		weapons[] =
+		{
+			"Exile_Melee_SledgeHammer"
+		};
+	};
+	class ScavengeWoodplanks: Exile_ScavengeCraftingRecipe
+	{
+		returnedItems[] =
+		{
+			{1, "Exile_Item_WoodPlank"}
+		};
+		tools[] =
+		{
+			"Exile_Item_Handsaw"
+		};
+	};
+	class ScavengeMetalPoles: Exile_ScavengeCraftingRecipe
+	{
+		returnedItems[] =
+		{
+			{1, "Exile_Item_MetalPole"}
+		};
+		tools[] =
+		{
+			"Exile_Item_Grinder"
+		};
+	};
+	class ScavengeDestroyCinderblock: Exile_ScavengeCraftingRecipe
+	{
+		returnedItems[] =
+		{
+			{1, "Exitem_cinderblock"}
+		};
+		weapons[] =
+		{
+			"Exile_Melee_SledgeHammer"
+		};
+	};
 };
