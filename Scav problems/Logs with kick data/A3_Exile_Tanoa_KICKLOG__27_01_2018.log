@@ -1,0 +1,197 @@
+27.01.2018 15:23:56: DriftWood(76561197994641119) isAdmin? true: HackAction on player: found [    ] in [["<t color='#FFFFFF' align='left'>Search through furniture</t>        <t color='#83ffffff' align='right'>Space     </t>","
+bis_fnc_holdAction_running = true;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (!isNil ""bis_fnc_holdAction_scriptHandle"" && {!scriptDone bis_fnc_holdAction_scriptHandle}) exitWith {};
+
+bis_fnc_holdAction_params = _this;
+bis_fnc_holdAction_scriptHandle = _this spawn
+{
+
+params
+[
+[""_target"",objNull,[objNull]],
+[""_caller"",objNull,[objNull]],
+[""_actionID"",10,[123]],
+[""_arguments"",[],[[]]]
+];
+
+private _this = _caller;	
+
+
+{inGameUISetEventHandler [_x, ""true""]} forEach [""PrevAction"", ""NextAction""];
+
+
+_arguments params[""_a0"",""_a1"",""_a2"",""_a3"",""_a4"",""_a5"",""_a6"",""_a7"",""_a8"",""_a9"",""_target"",""_title"",""_iconIdle"",""_iconProgress"",""_condShow"",""_condProgress"",""_codeStart"",""_codeProgress"",""_codeCompleted"",""_codeInterrupted"",""_duration"",""_removeCompleted""];
+
+
+private _condProgressCode = compile _condProgress;
+
+
+for ""_i"" from 0 to 					3 do
+{
+sleep 0.05;
+
+
+[_target,_actionID,_title,_iconIdle,					bis_fnc_holdAction_texturesIn,_i] call bis_fnc_holdAction_showIcon;
+};
+
+
+[_target,_caller,_actionID,_arguments] call _codeStart;
+
+
+private _frame = 0;
+private _timeStart = time;
+private _timeNextStep = time;
+private _stepDuration = _duration / 				24;
+
+
+while {call _condProgressCode && {_frame < 				24}} do
+{
+_timeNextStep = _timeStart + (_frame * _stepDuration);
+
+waitUntil
+{
+time >= _timeNextStep || {(inputAction ""Action"" < 0.5 && {inputAction ""ActionContext"" < 0.5}) || {visibleMap || {!(call _condProgressCode)}}}
+};
+
+
+if (time < _timeNextStep) exitWith
+{
+
+
+
+
+
+
+};
+
+
+_frame = _frame + 1;
+
+
+[_target,_actionID,_title,_iconProgress,				bis_fnc_holdAction_texturesProgress,_frame] call bis_fnc_holdAction_showIcon;
+
+
+[_target,_caller,_actionID,_arguments,_frame,				24] call _codeProgress;
+};
+
+
+if (_frame == 				24) then
+{
+sleep _stepDuration;
+
+if (_removeCompleted) then
+{
+_target removeAction _actionID;
+};
+
+[_target,_caller,_actionID,_arguments] call _codeCompleted;
+}
+else
+{
+[_target,_caller,_actionID,_arguments] call _codeInterrupted;
+};
+
+
+[_target,_actionID,_title,_iconIdle,				bis_fnc_holdAction_texturesProgress,0] call bis_fnc_holdAction_showIcon;
+
+
+{inGameUISetEventHandler [_x, """"]} forEach [""PrevAction"", ""NextAction""];
+
+
+bis_fnc_holdAction_running = false;
+};
+",["FurnitureCommon",<null>,<null>,<null>,<null>,<null>,<null>,<null>,<null>,<null>,R Moisturizers:1 (DriftWood),"<t color='#FFFFFF' align='left'>Search through furniture</t>        <t color='#83ffffff' align='right'>Space     </t>","<img size='3' color='#ffffff' image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa'/>","<img size='3' color='#ffffff' image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa'/>","[[""washing_machine.p3d"",""conference_table_a.p3d"",""almara.p3d"",""postel_manz_kov.p3d"",""skrin_bar.p3d"",""armchair.p3d"",""armchair_big.p3d"",""case_wall_unit_part_c.p3d"",""case_wall_unit_part_d.p3d"",""case_wooden_b.p3d"",""case_bedroom_b.p3d"",""bed_husbands.p3d"",""tabledesk_f.p3d"",""table_drawer.p3d"",""case_a.p3d"",""case_cans_b.p3d"",""library_a.p3d"",""postel_panelak1.p3d"",""postel_panelak2.p3d"",""postel_manz_kov.p3d"",""dhangar_brownskin.p3d"",""office_table_a.p3d"",""lobby_case.p3d"",""lobby_counter.p3d"",""metalcase_01.p3d"",""metalcase_02.p3d"",""dhangar_psacistul.p3d"",""truhla_stara.p3d""]] call {
+    lineIntersectsSurfaces [
+    	AGLToASL positionCameraToWorld [0,0,0],
+    	AGLToASL positionCameraToWorld [0,0,4],
+      player,
+      objNull,
+      true,
+      1,
+      ""GEOM"",
+      ""NONE""
+    ] select 0 params ["""","""",""_object"",""""];
+    if ((isNil ""_object"") || (isNull _object)) exitWith {
+      false
+    };
+    if (!(player getVariable [""CanScavenge"", true]) || !(isNull objectParent player)) exitWith {
+      false
+    };
+    _condition = false;
+    {
+      if (_x distance2D player < 2) exitWith {
+        _condition = true;
+      };
+    } forEach (missionNamespace getVariable [""ExileClientSavengedObjects"", []]);
+    if (_condition) exitWith {
+      false
+    };
+    _strObject = str _object;
+    {
+      [false,true] select (_strObject find _x > -1);
+    } count (_this select 0) > 0};","
+    lineIntersectsSurfaces [
+      AGLToASL positionCameraToWorld [0,0,0],
+      AGLToASL positionCameraToWorld [0,0,4],
+      player,
+      objNull,
+      true,
+      1,
+      ""GEOM"",
+      ""NONE""
+    ] select 0 params ["""","""",""_object"",""""];
+    !(SCG_NiiRoZz_Is_The_Best isEqualTo []) && {_object isEqualTo (SCG_NiiRoZz_Is_The_Best select 0)}
+    ",{
+lineIntersectsSurfaces [
+AGLToASL positionCameraToWorld [0,0,0],
+AGLToASL positionCameraToWorld [0,0,4],
+player,
+objNull,
+true,
+1,
+"GEOM",
+"NONE"
+] select 0 params ["_pos1","","_object",""];
+SCG_NiiRoZz_Is_The_Best = [_object,_pos1];
+},{
+private _progressTick = _this select 4;
+if (_progressTick % 2 == 0) exitwith {};
+playSound3D [((getarray (configfile >> "CfgSounds" >> "Orange_Action_Wheel" >> "sound")) param [0,""]) + ".wss",player,false,getposasl player,1,0.9 + 0.2 * _progressTick / 24];
+},{
+_configClassName = (_this select 3) select 0;
+[_configClassName,SCG_NiiRoZz_Is_The_Best select 0,SCG_NiiRoZz_Is_The_Best select 1] call ExileExpansionClient_system_scavenge_action_conditionEvents;
+SCG_NiiRoZz_Is_The_Best = [];
+},{
+SCG_NiiRoZz_Is_The_Best = [];
+},0.5,false]]] (PLAYER IS ADMIN)

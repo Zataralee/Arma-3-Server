@@ -1,0 +1,23 @@
+﻿15:20:11 BattlEye Server: Initialized (v1.217)
+15:20:11 Host identity created.
+15:20:11 Game Port: 2302, Steam Query Port: 2303
+15:20:11 Mission Exile.Tanoa read from bank.
+15:20:11 BattlEye Server: Ping detection currently not working, MaxPing command disabled
+15:20:12 Roles assigned.
+15:20:12 Reading mission ...
+15:20:38 Mission read.
+15:20:38 Successfull attempt to execute serverCommand '#exec users' by server.
+15:20:38 Successfull attempt to execute serverCommand '#exec users' by server.
+15:20:38 Successfull attempt to execute serverCommand '#lock' by server.
+15:20:38 Game started.
+15:21:43 Successfull attempt to execute serverCommand '#unlock' by server.
+15:22:52 DriftWood uses modified data file
+15:22:52 BattlEye Server: Player #0 DriftWood (24.17.92.21:2304) connected
+15:22:52 Player DriftWood connecting.
+15:22:52 BattlEye Server: Connected to BE Master
+15:22:54 BattlEye Server: Player #0 DriftWood - GUID: 0e05fc95721cd0d0017c8a17c7fc3a4f
+15:22:54 Player DriftWood connected (id=76561197994641119).
+15:22:54 BattlEye Server: Verified GUID (0e05fc95721cd0d0017c8a17c7fc3a4f) of player #0 DriftWood
+15:23:55 Successfull attempt to execute serverCommand '#kick 3' by server.
+15:23:55 Player DriftWood disconnected.
+15:23:55 BattlEye Server: Player #0 DriftWood disconnected
