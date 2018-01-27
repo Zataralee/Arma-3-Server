@@ -45,6 +45,15 @@ class Armed_Rotor_Wing
 			"B_Heli_Attack_01_dynamicLoadout_F",
 			"O_Heli_Attack_02_F",
 			"O_Heli_Attack_02_black_F",
-			"O_Heli_Attack_02_dynamicLoadout_F"
+			"O_Heli_Attack_02_dynamicLoadout_F",
+			"B_Heli_Transport_01_F",
+			"B_CTRG_Heli_Transport_01_tropic_F",
+			"CUP_I_Mi24_Mk4_AAF",
+			"CUP_I_Mi24_Mk4_ION",
+			"CUP_I_Mi24_Mk4_UN",
+			"CUP_O_Mi24_Mk4_CSAT_T",
+			"B_Heli_Attack_01_F",
+			"O_Heli_Attack_02_F"
+			
 		};
 	};
