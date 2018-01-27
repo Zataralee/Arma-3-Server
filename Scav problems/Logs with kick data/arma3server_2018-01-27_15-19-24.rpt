@@ -1,4 +1,5 @@
 =====================================================================
+=====================================================================
 == C:\Spokane_Survivalists\Game_Servers\Arma\arma3server.exe
 == arma3server.exe  "-mod=@exile;@Extended_Base_Mod;@CBA_A3;@CUP_Units;@CUP_Vehicles;@CUP_Weapons;Kart,Mark,Heli;@CUP_Terrains_Core;@Zombies and Demons;" "-servermod=@exileserver;@Advanced_Sling_Loading;@AdvancedTowing;@infiSTAR_Exile;@A3XAI;@Advanced Urban Rappelling;" -config=C:\Spokane_Survivalists\Game_Servers\Arma\@ExileServer\config.cfg -port=2302 -profiles=SC -cfg=C:\Spokane_Survivalists\Game_Servers\Arma\@ExileServer\basic.cfg -name=SC -autoinit -bepath=C:\Spokane_Survivalists\Game_Servers\Arma\pathfinders_be
 
@@ -3780,35 +3781,6 @@ _vehicleObject setVari>
 15:23:53 House 7f1b2400# 1704843: cargo_house_v3_f.p3d (from) not found in the operative map
 15:23:55 "<infiSTAR.de>KICKLOG| DriftWood(76561197994641119) isAdmin? true: HackAction on player: found [    ] in [[""<t color='#FFFFFF' align='left'>Search through furniture</t>        <t color='#83ffffff' align='right'>Space     </t>"",""
 bis_fnc_holdAction_running = true;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 if (!isNil """"bis_fnc_holdAction_scriptHandle"""" && {!scriptDone bis_fnc_holdAction_scriptHandle}) exitWith {};

@@ -1,0 +1,42 @@
+
+	When line 46 of "fn_preInit" is commented out the scavenge system is disabled, 
+	though the option still shows when you try to salvage a vehicle. 
+	
+	Line 46
+		//['ExileExpansionClient_gui_holdActionAdd', 'core\code\client\ExileExpansionClient_gui_holdActionAdd.sqf', false],
+	
+	Kick log
+		15:23:55 "<infiSTAR.de>KICKLOG| DriftWood(76561197994641119) isAdmin? true: HackAction on player: found [    ] in [[""<t color='#FFFFFF' align='left'>Search through furniture</t>        <t color='#83ffffff' align='right'>Space     </t>"",""
+		bis_fnc_holdAction_running = true;
+
+
+		if (!isNil """"bis_fnc_holdAction_scriptHandle"""" && {!scriptDone bis_fnc_holdAction_scriptHandle}) exitWith {};
+
+		bis_fnc_holdAction_params = _this;
+		bis_fnc_holdAction_scriptHandle = _this spawn
+		{
+
+		params
+		[
+		[""""_target"""",objNull,[objNull]],
+		[""""_caller"""",objNull,[objNull]],
+		[""""_actionID"""",10,[123]],
+		[""""_arguments"""",[],[[]]]
+		];
+
+		private _this = _caller;	
+
+
+		{inGameUISetEventHandler [_x, """"true""""]} forEach [""""PrevAction"""", """"NextAction""""];
+
+
+		_arguments params[""""_a0"""",""""_a1"""",""""_a2"""",""""_a3"""",""""_a4"""",""""_a5"""",""""_a6"""",""""_a7"""",""""_a8"""",""""_a9"""",""""_target"""",""""_title"""",""""_iconIdle"""",""""_iconProgress"""",""""_condShow"""",""""_condProgress"""",""""_c
+		15:23:55 Successfull attempt to execute serverCommand '#kick 3' by server.
+		15:23:55 NetServer: cannot find channel #1688188611, users.card=0
+		15:23:55 Message not sent - error 0, message ID = ffffffff, to 1688188611 (DriftWood)
+		15:23:55 "<infiSTAR.de>CONNECTLOG| Disconnected: DriftWood(76561197994641119) Owner: 3, SteamName: zataralee   [07-12-2017 00-30-26 - v88]"
+
+		
+	Line 46 of this files leads to two files, though I'm not sure what exactly it's 
+	doing with the files. 
+	File 1 on this line is "ExileExpansionClient_guy_holdActionAdd" 
