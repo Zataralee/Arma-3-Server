@@ -1,1 +1,1 @@
-"com.exilemod.lootcompiler.exe" "LootItemGroups.h" "LootTables.h" "CfgExileLootServer.hpp"
+"com.exilemod.lootcompiler.exe" "LootItemGroups.h" "LootTables.h" "CfgExileLootServer1.hpp"

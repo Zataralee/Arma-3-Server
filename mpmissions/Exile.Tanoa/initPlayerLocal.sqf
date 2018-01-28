@@ -176,4 +176,4 @@ eXpochBaseSpawnLevelRequired = 1; 					// Required Level of Base for Allowing Sp
 eXpochBaseSpawnAllowedType = "ExileTerritoryBuildRights"; // If only owners can spawn change this to "ExileOwnerUID" - default: "ExileTerritoryBuildRights"
 eXpochBaseSpawnDeadBodyDistLimit = 10;		// If the players dead body is within 500m of their own base, they will not get the option to spawn there
 
-
+SV_fnc_SalvageVehicle = compileFinal preprocessFileLineNumbers "custom\SalvageVehicle\SalvageVehicle.sqf";
