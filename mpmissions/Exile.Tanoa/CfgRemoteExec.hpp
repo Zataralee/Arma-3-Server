@@ -7,7 +7,9 @@ class CfgRemoteExec
 		class fnc_AdminReq 												{ allowedTargets=2; };
 		class ExileServer_system_network_dispatchIncomingMessage 		{ allowedTargets=2; };
 		
-				
+		//Scavenge
+		class ExileExpansionServer_system_scavenge_spawnLoot			{ allowedTargets=0; };
+		
 		//Moved from description_ext
 		class ExAdServer_fnc_clientRequest { allowedTargets=2; };
 

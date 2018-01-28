@@ -99,7 +99,8 @@ class RscTitles
 		fadeout = 0;
 		duration = 0;
 	};
-	
+	// Scavenge system
+	#include "dialogs\ExileScavengeUI.hpp"
 	#include "ExAdClient\RscTitles.cpp"
 };
 
@@ -121,7 +122,11 @@ class CfgNetworkMessages
 	#include "infiSTAR_AdminMenu.hpp"
 	#include "infiSTAR_chat.hpp"
 	
-	
+	//#include "CfgFunctions.cpp" Duplicate
+	#include "CfgScavengeRecipes.cpp"
+	#include "CfgExileScavenge.cpp"
+	#include "CfgExileHoldActions.cpp"
+
 	//Bounty
 	#include "MostWanted_Client\Dialog\MostWantedDefines.hpp"
     #include "MostWanted_Client\Dialog\MostWantedDialog.hpp"
