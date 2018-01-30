@@ -3,7 +3,7 @@
 	///////////////////////////////////////////////////////////////////////////////		
 	// BIKES		
 	///////////////////////////////////////////////////////////////////////////////		
-	class Exile_Bike_OldBike 				{ quality = 1; price = 40; };
+	class Exile_Bike_OldBike 					{ quality = 1; price = 40; };
 	class Exile_Bike_MountainBike 				{ quality = 1; price = 50; };
 
 	///////////////////////////////////////////////////////////////////////////////
@@ -16,14 +16,14 @@
 	class Exile_Bike_QuadBike_Nato				{ quality = 1; price = 300; };
 	class Exile_Bike_QuadBike_Csat				{ quality = 1; price = 300; };
 	class Exile_Bike_QuadBike_Fia				{ quality = 1; price = 300; };
-	class Exile_Bike_QuadBike_Guerilla01			{ quality = 1; price = 300; };
-	class Exile_Bike_QuadBike_Guerilla02			{ quality = 1; price = 300; };
+	class Exile_Bike_QuadBike_Guerilla01		{ quality = 1; price = 300; };
+	class Exile_Bike_QuadBike_Guerilla02		{ quality = 1; price = 300; };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// KARTS
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Car_Kart_BluKing				{ quality = 7; price = 800; };
-	class Exile_Car_Kart_RedStone				{ quality = 7; price = 800; };
+	class Exile_Car_Kart_BluKing			{ quality = 7; price = 800; };
+	class Exile_Car_Kart_RedStone			{ quality = 7; price = 800; };
 	class Exile_Car_Kart_Vrana				{ quality = 7; price = 800; };
 	class Exile_Car_Kart_Green				{ quality = 7; price = 800; };
 	class Exile_Car_Kart_Blue				{ quality = 7; price = 800; };
@@ -38,8 +38,8 @@
 	class Exile_Car_Hatchback_Beige				{ quality = 1; price = 7000; };
 	class Exile_Car_Hatchback_Green				{ quality = 1; price = 7000; };
 	class Exile_Car_Hatchback_Blue				{ quality = 1; price = 7000; };
-	class Exile_Car_Hatchback_BlueCustom			{ quality = 1; price = 7000; };
-	class Exile_Car_Hatchback_BeigeCustom			{ quality = 1; price = 7000; };
+	class Exile_Car_Hatchback_BlueCustom		{ quality = 1; price = 7000; };
+	class Exile_Car_Hatchback_BeigeCustom		{ quality = 1; price = 7000; };
 	class Exile_Car_Hatchback_Yellow			{ quality = 1; price = 7000; };
 	class Exile_Car_Hatchback_Grey				{ quality = 1; price = 7000; };
 	class Exile_Car_Hatchback_Black				{ quality = 1; price = 7000; };
@@ -58,44 +58,44 @@
 	// Ikarus
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_Ikarus_Blue 				{ quality = 1; price = 10000; };
-	class Exile_Car_Ikarus_Red 				{ quality = 1; price = 10000; };
+	class Exile_Car_Ikarus_Red 					{ quality = 1; price = 10000; };
 	class Exile_Car_Ikarus_Party 				{ quality = 1; price = 10000; };
     
 	///////////////////////////////////////////////////////////////////////////////
 	// Ural (Open)
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Car_Ural_Open_Blue				{ quality = 2; price = 20000; sellPrice = 20000; };
-	class Exile_Car_Ural_Open_Yellow			{ quality = 2; price = 20000; sellPrice = 20000; };
-	class Exile_Car_Ural_Open_Worker			{ quality = 2; price = 20000; sellPrice = 20000; };
-	class Exile_Car_Ural_Open_Military			{ quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_Ural_Open_CDF                      		{ quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_Ural_Empty_CDF                     		{ quality = 2; price = 20000; sellPrice = 20000; };
+	class Exile_Car_Ural_Open_Blue				{ quality = 2; price = 20000;};
+	class Exile_Car_Ural_Open_Yellow			{ quality = 2; price = 20000;};
+	class Exile_Car_Ural_Open_Worker			{ quality = 2; price = 20000;};
+	class Exile_Car_Ural_Open_Military			{ quality = 2; price = 20000;};
+	class CUP_B_Ural_Open_CDF                   { quality = 2; price = 20000;};
+	class CUP_B_Ural_Empty_CDF                	{ quality = 2; price = 20000;};
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// Ural (Covered)
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Car_Ural_Covered_Blue			{ quality = 2; price = 20000; sellPrice = 20000; };
-	class Exile_Car_Ural_Covered_Yellow			{ quality = 2; price = 20000; sellPrice = 20000; };
-	class Exile_Car_Ural_Covered_Worker			{ quality = 2; price = 20000; sellPrice = 20000; };
-	class Exile_Car_Ural_Covered_Military		        { quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_MTVR_USA                                    { quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_MTVR_USMC                                   { quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_Ural_CDF                                    { quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_MTVR_Ammo_USA                               { quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_MTVR_Refuel_USA                             { quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_MTVR_Repair_USA                             { quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_MTVR_Ammo_USMC                              { quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_MTVR_Refuel_USMC                            { quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_MTVR_Repair_USMC                            { quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_Ural_Refuel_CDF                             { quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_Ural_Repair_CDF                             { quality = 2; price = 20000; sellPrice = 20000; };
-	class CUP_B_Ural_Reammo_CDF                             { quality = 2; price = 20000; sellPrice = 20000; };
+	class Exile_Car_Ural_Covered_Blue						{ quality = 2; price = 20000;};
+	class Exile_Car_Ural_Covered_Yellow						{ quality = 2; price = 20000;};
+	class Exile_Car_Ural_Covered_Worker						{ quality = 2; price = 20000;};
+	class Exile_Car_Ural_Covered_Military					{ quality = 2; price = 20000;};
+	class CUP_B_MTVR_USA                                    { quality = 2; price = 20000;};
+	class CUP_B_MTVR_USMC                                   { quality = 2; price = 20000;};
+	class CUP_B_Ural_CDF                                    { quality = 2; price = 20000;};
+	class CUP_B_MTVR_Ammo_USA                               { quality = 2; price = 20000;};
+	class CUP_B_MTVR_Refuel_USA                             { quality = 2; price = 20000;};
+	class CUP_B_MTVR_Repair_USA                             { quality = 2; price = 20000;};
+	class CUP_B_MTVR_Ammo_USMC                              { quality = 2; price = 20000;};
+	class CUP_B_MTVR_Refuel_USMC                            { quality = 2; price = 20000;};
+	class CUP_B_MTVR_Repair_USMC                            { quality = 2; price = 20000;};
+	class CUP_B_Ural_Refuel_CDF                             { quality = 2; price = 20000;};
+	class CUP_B_Ural_Repair_CDF                             { quality = 2; price = 20000;};
+	class CUP_B_Ural_Reammo_CDF                             { quality = 2; price = 20000;};
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// V3S
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Car_V3S_Open				{ quality = 2; price = 20000; sellPrice = 20000; };
-	class Exile_Car_V3S_Covered				{ quality = 2; price = 20000; sellPrice = 20000; };
+	class Exile_Car_V3S_Open				{ quality = 2; price = 20000;};
+	class Exile_Car_V3S_Covered				{ quality = 2; price = 20000;};
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// SUVXL
@@ -116,7 +116,7 @@
 	// Tow Tractor
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_TowTractor_White			{ quality = 1; price = 1000; };
-	class CUP_B_TowingTractor_USMC                          { quality = 1; price = 1000; };
+	class CUP_B_TowingTractor_USMC              { quality = 1; price = 1000; };
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// Octavius
