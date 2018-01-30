@@ -158,6 +158,7 @@
 5, MilitaryClothing
 5, Rifles
 100, Trash
+// 1, RaidingItems    To be added when we sort the weighting out.
 
 ///////////////////////////////////////////////////////////////////////////////
 // Hospital, Medevac etc. (Does not spawn on Altis!)
