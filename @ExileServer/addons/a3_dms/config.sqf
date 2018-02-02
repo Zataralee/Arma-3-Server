@@ -186,7 +186,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	/*Mine settings*/
 
 	DMS_MinPlayerCount					= 0; 						// Minimum number of players until mission start
-	DMS_MinServerFPS					= 5; 						// Minimum server FPS for missions to start
+	DMS_MinServerFPS					= 20; 						// Minimum server FPS for missions to start
 
 	/*Mission notification settings*/
 	DMS_PlayerNotificationTypes =		[									// Notification types. Supported values are: ["dynamicTextRequest", "standardHintRequest", "systemChatRequest", "textTilesRequest", "ExileToasts"]. Details below.
@@ -358,19 +358,19 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_GiveRespectToPlayer_OnAIKill	= true;						// Whether or not to give respect to players when they kill AI.
 
 	DMS_Bandit_Soldier_MoneyGain		= 50;						// The amount of Poptabs gained for killing a bandit soldier
-	DMS_Bandit_Soldier_RepGain			= 10;						// The amount of Respect gained for killing a bandit soldier
+	DMS_Bandit_Soldier_RepGain			= 15;						// The amount of Respect gained for killing a bandit soldier
 	DMS_Bandit_Soldier_RankGain			= 15;
-	DMS_Bandit_Soldier_SpawnMoney		= 200;						// The amount of Poptabs carried by a bandit soldier
+	DMS_Bandit_Soldier_SpawnMoney		= 3500;						// The amount of Poptabs carried by a bandit soldier
 
 	DMS_Bandit_Static_MoneyGain			= 75;						// The amount of Poptabs gained for killing a bandit static gunner
-	DMS_Bandit_Static_RepGain			= 15;						// The amount of Respect gained for killing a bandit static gunner
+	DMS_Bandit_Static_RepGain			= 20;						// The amount of Respect gained for killing a bandit static gunner
 	DMS_Bandit_Static_RankGain			= 30;
-	DMS_Bandit_Static_SpawnMoney		= 250;						// The amount of Poptabs carried by a bandit static gunner
+	DMS_Bandit_Static_SpawnMoney		= 4000;						// The amount of Poptabs carried by a bandit static gunner
 
 	DMS_Bandit_Vehicle_MoneyGain		= 100;						// The amount of Poptabs gained for killing a bandit vehicle crew member
 	DMS_Bandit_Vehicle_RepGain			= 25;						// The amount of Respect gained for killing a bandit vehicle crew member
 	DMS_Bandit_Vehicle_RankGain			= 50;
-	DMS_Bandit_Vehicle_SpawnMoney		= 400;						// The amount of Poptabs carried by a bandit vehicle crew member
+	DMS_Bandit_Vehicle_SpawnMoney		= 4500;						// The amount of Poptabs carried by a bandit vehicle crew member
 
 /* DonkeyPunchDMS Custom Settings for Hero AI*/
 	DMS_Hero_Soldier_MoneyGain			= 100;						// The amount of Poptabs gained for killing a hero soldier
@@ -404,7 +404,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_Survivor_Vehicle_SpawnMoney		= 0;						// The amount of Poptabs carried by a Survivor vehicle crew member
 
 	DMS_AIKill_DistanceBonusMinDistance	= 100;						// Minimum distance from the player to the AI to apply the distance bonus.
-	DMS_AIKill_DistanceBonusCoefficient	= 0.05;						// If the distance from the player to the killed unit is more than "DMS_AIKill_DistanceBonusMinDistance" meters then the player gets a respect bonus equivalent to the distance multiplied by this coefficient. For example, killing an AI from 400 meters will give 100 extra respect (when the coefficient is 0.25). Set to 0 to disable the bonus. This bonus will not be applied if there isn't a regular AI kill bonus.
+	DMS_AIKill_DistanceBonusCoefficient	= 0.30;						// If the distance from the player to the killed unit is more than "DMS_AIKill_DistanceBonusMinDistance" meters then the player gets a respect bonus equivalent to the distance multiplied by this coefficient. For example, killing an AI from 400 meters will give 100 extra respect (when the coefficient is 0.25). Set to 0 to disable the bonus. This bonus will not be applied if there isn't a regular AI kill bonus.
 
 	DMS_Diff_RepOrTabs_on_roadkill 		= true;						// Whether or not you want to use different values for giving respect/poptabs when you run an AI over. Default values are NEGATIVE. This means player will LOSE respect or poptabs.
 	DMS_Bandit_Soldier_RoadkillMoney	= -10;						// The amount of Poptabs gained/lost for running over a bandit soldier
@@ -496,9 +496,9 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_AI_WP_Radius_base				= 5;						// Waypoint radius for AI in bases.
 	DMS_AI_WP_Radius_heli				= 500;						// Waypoint radius for AI in helis.
 
-	DMS_AI_destroyVehicleChance			= 25;						// Percent chance that an AI vehicle will be destroyed after the AI have been killed. Set to 100 for always, or 0 for never.
+	DMS_AI_destroyVehicleChance			= 0;						// Percent chance that an AI vehicle will be destroyed after the AI have been killed. Set to 100 for always, or 0 for never.
 
-	DMS_AI_destroyStaticWeapon			= true;						// Whether or not to destroy static HMGs after AI death.
+	DMS_AI_destroyStaticWeapon			= false;						// Whether or not to destroy static HMGs after AI death.
 	DMS_AI_destroyStaticWeapon_chance	= 25;						// Percent chance that a static weapon will be destroyed (only applied if "DMS_AI_destroyStaticWeapon" is true)
 
 	DMS_static_weapons =				[							// Static weapons for AI
@@ -721,7 +721,9 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											"Exile_Item_PowerDrink",
 											"Exile_Item_PlasticBottleCoffee",
 											"Exile_Item_Vishpirin",
-											"Exile_Item_Instadoc"
+											"Exile_Item_Instadoc",
+											"Exile_Item_MobilePhone"
+											"Exile_Magazine_Battery"
 										];
 	DMS_MG_helmets =					[							// Helmets for MG Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -1357,7 +1359,19 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											#endif
 											"Exile_Car_Strider",
 											"Exile_Car_Hunter",
-											"Exile_Car_Ifrit"
+											"Exile_Car_Ifrit",
+											"Exile_Car_HMMWV_MEV_Green",
+											"Exile_Car_HMMWV_UNA_Green",
+											"CUP_B_HMMWV_Unarmed_USMC",
+											"CUP_B_HMMWV_Transport_USA",
+											"CUP_B_HMMWV_Terminal_USA",
+											"Exile_Car_Tempest",
+											"O_Truck_02_covered_F",
+											"C_Truck_02_transport_F",
+											"C_Truck_02_fuel_F",
+											"C_IDAP_Truck_02_transport_F",
+											"Exile_Car_ProwlerLight",
+											"Exile_Car_QilinUnarmed"
 										];
 
 	DMS_TransportTrucks =				[							// List of transport trucks that can spawn
