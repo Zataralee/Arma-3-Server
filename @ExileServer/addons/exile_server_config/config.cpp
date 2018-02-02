@@ -4155,30 +4155,30 @@ class CfgSettings
 		class Database 
 		{
 			// Remove all deleted items from the database after X days
-			permanentlyDeleteTime = 3;
+			permanentlyDeleteTime = 7;
 			
 			// Remove all territories (and contructions + containers in it) that were not paid after X days
 			territoryLifeTime = 30;
 
 			// Remove all containers outside of territories that have not been used for X days
 			// Example: Tents
-			containerLifeTime = 10;
+			containerLifeTime = 1;
 
 			// Remove all constructions outside of territories that are older than X days or not moved for X days 
 			// Example: Work Benches
 			constructionLifeTime = 2;
 
 			// Remove all vehicles that were not moved/used for X days
-			vehicleLifeTime = 3;
+			vehicleLifeTime = 7;
 			
 			// Set safe as abandoned
 			abandonedTime = 30;
 			
 			// Deletes a base X days after the flag is stolen if the ransom money isn't paid
-			stolenFlagLifeTime = 30;
+			stolenFlagLifeTime = 14;
 			
 			// Sets door & safe pins to 0000 and marks safes to abandoned X days after the flag is stolen if the ransom money isn't paid
-			unlockLifeTime = 2;
+			unlockLifeTime = 3;
 		};
 	};
 
@@ -4374,7 +4374,7 @@ class CfgSettings
 		* Vehicle ammount per grid
 		* kinda self explanitory
 		*/
-		vehiclesGridAmount = 3;
+		vehiclesGridAmount = 2;
 
 		/**
 		* Creates global markers for vehicle spawn tweeking,
@@ -4707,7 +4707,7 @@ class CfgSettings
 			weather type of be more dominant compared to others, add it multiple times
 		*/
 		//keyframes[] = {"Sunny", "Cloudy", "Thunderstorm"}; 
-		keyframes[] = {"Sunny"}; 
+		keyframes[] = {"Sunny","Sunny","Sunny","Cloudy","Cloudy","Thunderstorm"}; 
 
 		/*
 			This is a keyframe. Look up the BIKI to get more details about the parameters
@@ -4878,7 +4878,7 @@ class CfgSettings
 			function = "ExileServer_system_event_earthQuake_start";
 			minTime = 60;
 			maxTime = 180;
-			minimumPlayersOnline = 101;
+			minimumPlayersOnline = 25;
 		};
 
 		class SupplyBox 
@@ -4965,7 +4965,7 @@ class CfgSettings
 			function = "ExileServer_system_event_abandonedSafe_start";
 			minTime = 60; // minutes
 			maxTime = 120; // minutes
-			minimumPlayersOnline = 1;
+			minimumPlayersOnline = 8;
 			markerTime = 15; // minutes
 		};
 
@@ -4975,7 +4975,7 @@ class CfgSettings
 			function = "ExileServer_system_event_ambientFlyOver_start";
 			minTime = 30; // minutes
 			maxTime = 90; // minutes
-			minimumPlayersOnline = 1;
+			minimumPlayersOnline = 3;
 		};
 	};
 	

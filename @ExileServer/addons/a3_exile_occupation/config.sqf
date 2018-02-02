@@ -20,10 +20,10 @@ SC_infiSTAR_log					= true;						// true Use infiSTAR logging, false logs to ser
 SC_useApexClasses           	= true;                 	// true if you want to use the Apex class list over rides, false to use vanilla Arma gear
 SC_useMapOverrides          	= true;                 	// set to true to enable over riding options per map (see the bottom of this file for examples)
 
-SC_maxAIcount					= 200;						// the maximum amount of AI, if the AI count is above this then additional AI won't spawn
+SC_maxAIcount					= 180;						// the maximum amount of AI, if the AI count is above this then additional AI won't spawn
 SC_mapMarkers					= false;                	// Place map markers at the occupied areas (occupyPlaces and occupyMilitary only) true/false
-SC_minFPS						= 5;				    	// any lower than minFPS on the server and additional AI won't spawn
-SC_scaleAI						= 10;						// any more than _scaleAI players on the server and _maxAIcount is reduced for each extra player
+SC_minFPS						= 20;				    	// any lower than minFPS on the server and additional AI won't spawn
+SC_scaleAI						= 15;						// any more than _scaleAI players on the server and _maxAIcount is reduced for each extra player
 
 SC_minDistanceToSpawnZones  	= 750;                  	// Minimum distance in metres to the nearest spawn zone
 SC_minDistanceToTraders     	= 750;                  	// Minimum distance in metres to the nearest trader zone
@@ -88,7 +88,7 @@ SC_occupyPlacesSurvivors		= true;						// true if you want a chance to spawn sur
 
 SC_occupyTraderDetails      	= [
 									//["Tanoa","Lifou Traders",[7317,7217,0],"trader1.sqf",true],
-									["Tanoa","Lijnhaven Traders",[11580,2051,0],"trader1.sqf",true]
+									//["Tanoa","Lijnhaven Traders",[11580,2051,0],"trader1.sqf",true]
 									//["Napf","Hafen Traders",[9286,17606,0],"trader1.sqf",true]
 								  ];  //["mapname","Name",[x,y,z],"filename",true] trader name, location, safezone true/false
         	
@@ -111,7 +111,7 @@ SC_staticSurvivors          	= [		//[[pos],ai count,radius,search buildings]
 							  
 SC_colourTransport          	= true;                 // true if you want the public transport coloured
 SC_secureTransport          	= true;                	// true if you want the public transport and pilot to be indestructible
-SC_occupyTransportClass 		= ["Exile_Chopper_Orca_BlackCustom"]; // to always use the same vehicle, specify one option only
+SC_occupyTransportClass 		= [//"Exile_Chopper_Orca_BlackCustom"]; // to always use the same vehicle, specify one option only
 
 SC_occupyTransportStartPos  	= [];                   // if empty defaults to map centre
 
@@ -185,10 +185,10 @@ SC_LootCrateItems           	= [
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////							
 							
 SC_blackListedAreas         	=   [
-                                    [[3810,8887,0],     500,    "Chernarus"],       // Vybor Occupation DMS Static Mission
-                                    [[12571,14337,0],   500,    "Altis"],           // Neochori Occupation DMS Static Mission
-                                    [[3926,7523,0],     500,    "Namalsk"],         // Norinsk Occupation DMS Static Mission  
-                                    [[3926,7523,0],     500,    "Napf"],            // Lenzburg Occupation DMS Static Mission   
+                                    //[[3810,8887,0],     500,    "Chernarus"],       // Vybor Occupation DMS Static Mission
+                                    //[[12571,14337,0],   500,    "Altis"],           // Neochori Occupation DMS Static Mission
+                                    //[[3926,7523,0],     500,    "Namalsk"],         // Norinsk Occupation DMS Static Mission  
+                                    //[[3926,7523,0],     500,    "Napf"],            // Lenzburg Occupation DMS Static Mission   
 									[[11685,2666,0],    500,    "Tanoa"],           // Lijnhaven Occupation DMS Static Mission
 									[[11580,2051,0],	500,	"Tanoa"],			// Lijnhaven Traders
 									[[7228,6986,0],		250,	"Tanoa"]			// Tanoa Airport
@@ -207,10 +207,10 @@ SC_occupyHeliCrashesLocations	= [
                                 ];
 SC_HeliCrashesOnFire			= true;                 	// true if you want the crash on fire, false if you just want smoke
 SC_SpawnHeliCrashGuards			= true;						// true if you want to enable AI guards
-SC_numberofHeliCrashes      	= 5;						// if SC_occupyHeliCrashes = true spawn this many Heli Crashes
+SC_numberofHeliCrashes      	= 3;						// if SC_occupyHeliCrashes = true spawn this many Heli Crashes
 SC_HeliCrashGuards          	= 6;                    	// number of AI to spawn at each crate
 SC_HeliCrashGuardsRandomize 	= true;                 	// Use a random number of guards up to a maximum = SC_HeliCrashGuards (so between 1 and SC_HeliCrashGuards)
-SC_HeliCrashMarkers				= true;						// true if you want to have markers on the Heli Crashes
+SC_HeliCrashMarkers				= false;						// true if you want to have markers on the Heli Crashes
 
 // Array of possible common items to go in heli crash crates ["classname",fixed amount,random amount] NOT INCLUDING WEAPONS
 // ["HandGrenade",0,2] this example would add between 0 and 2 HandGrenade to the crate (fixed 0 plus 0-2 random)
