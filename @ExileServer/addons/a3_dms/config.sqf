@@ -268,7 +268,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											["roguenavyseals",3],
 											["thieves",3],
 											["walmart",3],
-											["SpecOpps",3]
+											["spec_ops",3]
 										];
 
 
