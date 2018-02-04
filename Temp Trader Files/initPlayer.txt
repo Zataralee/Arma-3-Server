@@ -1,0 +1,59 @@
+/**
+ * Created with Exile Mod 3DEN Plugin
+ * www.exilemod.com
+ */
+
+if (!hasInterface || isServer) exitWith {};
+
+// 19 NPCs
+private _npcs = [
+["Exile_Trader_Diving", ["Acts_TreatingWounded02"], "Exile_Trader_Diving", "Barklem", [["arifle_SDAR_F","","","",[],[],""],[],[],["U_I_Wetsuit",[]],["V_RebreatherIA",[]],[],"","G_I_Diving",[],["","","","","",""]], [11804.2, 2720.55, 0.395223], [-0.993789, -0.111278, 0], [0, 0, 1]],
+["Exile_Trader_Boat", ["HubSittingChairB_idle3"], "Exile_Trader_Boat", "WhiteHead_13", [[],[],[],["U_C_IDAP_Man_shorts_F",[]],["V_Pocketed_black_F",[]],[],"H_Cap_Orange_IDAP_F","G_Tactical_Clear",[],["","","","","",""]], [11840.5, 2737.16, 0.455037], [0.798005, -0.602651, 0], [0, 0, 1]],
+["Exile_Guard_03", ["c4coming2cDf_genericstani3"], "", "WhiteHead_01", [["arifle_SDAR_F","","","",[],[],""],[],[],["U_I_Wetsuit",[]],["Exile_Vest_Rebreather_AAF",[]],[],"","Exile_Glasses_Diving_AAF",[],["","","","","",""]], [11805.8, 2719.03, 0.395053], [-0.711413, 0.702774, 0], [0, 0, 1]],
+["Exile_Trader_Equipment", ["HubBriefing_scratch"], "Exile_Trader_Equipment", "WhiteHead_17", [["arifle_Mk20_GL_F","","","",["30Rnd_556x45_Stanag",30],[],""],[],[],["U_B_CTRG_Soldier_urb_2_F",[["30Rnd_556x45_Stanag",2,30]]],["V_I_G_resistanceLeader_F",[["30Rnd_556x45_Stanag",1,30]]],[],"H_Beret_blk","",[],["","","","","",""]], [11809.6, 2755.26, 3.42779], [-0.640673, -0.767814, 0], [0, 0, 1]],
+["Exile_Trader_Hardware", ["Acts_CivilListening_2"], "Exile_Trader_Hardware", "GreekHead_A3_09", [[],[],[],["U_BG_Guerilla1_1",[]],["V_BandollierB_rgr",[]],["B_LegStrapBag_coyote_F",[]],"H_Booniehat_khk_hs","G_Aviator",[],["","","","","",""]], [11805, 2755.83, 3.43244], [0.091884, -0.99577, 0], [0, 0, 1]],
+["Exile_Trader_Armory", ["InBaseMoves_table1"], "Exile_Trader_Armory", "WhiteHead_11", [[],[],["hgun_Rook40_F","","","",["16Rnd_9x21_Mag",16],[],""],["U_BG_Guerilla1_1",[["16Rnd_9x21_Mag",3,16]]],["V_PlateCarrierIA2_dgtl",[]],[],"H_MilCap_dgtl","G_Shades_Black",[],["","","","","",""]], [11771.9, 2759.95, 3.06144], [0.420485, -0.9073, 0], [0, 0, 1]],
+["Exile_Guard_03", ["Acts_AidlPercMstpSnonWnonDnon_warmup_8_loop"], "", "Barklem", [["SMG_02_F","","","",[],[],""],[],[],["U_BG_Guerilla2_3",[]],["V_TacVestIR_blk",[]],[],"H_Bandanna_camo","G_Squares_Tinted",[],["","","","","",""]], [11770.6, 2742.76, 3.06144], [0, 1, 0], [0, 0, 1]],
+["Exile_Trader_Food", [], "Exile_Trader_Food", "WhiteHead_03", [[],[],[],["U_C_Poloshirt_blue",[]],[],[],"H_Cap_tan","G_Combat",[],["","","","","",""]], [11793.3, 2739.66, 3.21088], [-0.982592, -0.185776, 0], [0, 0, 1]],
+["Exile_Trader_Office", ["HubBriefing_stretch"], "Exile_Trader_Office", "WhiteHead_14", [[],[],["hgun_ACPC2_F","","","",["9Rnd_45ACP_Mag",9],[],""],["U_I_G_resistanceLeader_F",[["9Rnd_45ACP_Mag",3,9]]],["V_Rangemaster_belt",[]],[],"H_Hat_brown","G_Aviator",[],["","","","","",""]], [11769.5, 2771.55, 6.53711], [-0.0324748, 0.999473, 0], [0, 0, 1]],
+["Exile_Trader_Aircraft", ["HubSittingChairB_idle2"], "Exile_Trader_Aircraft", "WhiteHead_17", [[],[],[],["U_I_pilotCoveralls",[]],[],[],"H_PilotHelmetHeli_O","G_Combat",[],["","","","","",""]], [11776.5, 2991.64, 5.18444], [-0.691152, 0.722709, 0], [0, 0, 1]],
+["Exile_Trader_AircraftCustoms", ["AmovPercMstpSoptWbinDnon"], "Exile_Trader_AircraftCustoms", "WhiteHead_20", [[],[],[],["Exile_Uniform_ExileCustoms",[]],["V_DeckCrew_brown_F",[]],[],"H_HeadSet_orange_F","G_Tactical_Black",["Binocular","","","",[],[],""],["","","","","",""]], [11785.1, 2994.5, 7.07344], [0.743157, -0.669118, 0], [0, 0, 1]],
+["Exile_Trader_WasteDump", ["InBaseMoves_repairVehicleKnl"], "Exile_Trader_WasteDump", "Sturrock", [[],[],[],["U_I_G_Story_Protagonist_F",[]],["V_Rangemaster_belt",[]],[],"H_MilCap_gry","G_Tactical_Clear",[],["","","","","",""]], [11758, 2935.2, 5.72629], [0.22937, 0.973339, 0], [0, 0, 1]],
+["Exile_Guard_01", ["InBaseMoves_patrolling2"], "", "WhiteHead_18", [["srifle_DMR_03_F","","","",[],[],""],[],[],["U_BG_Guerrilla_6_1",[]],["V_TacVest_khk",[]],[],"H_ShemagOpen_tan","G_Tactical_Black",[],["","","","","",""]], [11750.2, 2937.5, 5.39054], [0.670077, -0.742292, 0], [0, 0, 1]],
+["Exile_Guard_02", ["c4coming2cDf_genericstani1"], "", "GreekHead_A3_06", [["arifle_Mk20_GL_F","","","",[],[],""],[],[],["U_BG_Guerilla1_1",[]],["V_PlateCarrierIA2_dgtl",[]],[],"H_Hat_camo","G_Tactical_Clear",[],["","","","","",""]], [11772.4, 2766.71, 6.53727], [0.0661171, -0.997812, 0], [0, 0, 1]],
+["Exile_Guard_02", ["HubStanding_idle1"], "", "WhiteHead_05", [["arifle_AK12_F","","","optic_ACO_grn",["30Rnd_762x39_Mag_F",30],[],""],[],[],["U_I_C_Soldier_Para_3_F",[["30Rnd_762x39_Mag_F",3,30]]],["V_TacVestIR_blk",[]],[],"H_EarProtectors_black_F","",[],["","","","","",""]], [11768, 2771.44, 6.53681], [-0.0760467, 0.997104, 0], [0, 0, 1]],
+["Exile_Guard_01", ["Acts_AidlPsitMstpSsurWnonDnon01"], "", "GreekHead_A3_08", [[],[],[],["Exile_Uniform_BambiOverall",[]],[],[],"H_HeadBandage_stained_F","",[],["","","","","",""]], [11769.4, 2775.28, 6.53679], [0.123168, -0.992386, 0], [0, 0, 1]],
+["Exile_Trader_BoatCustoms", ["Acts_passenger_flatground_leanright"], "Exile_Trader_BoatCustoms", "WhiteHead_21", [[],[],[],["U_C_Paramedic_01_F",[]],["V_Plain_crystal_F",[]],[],"H_HeadSet_yellow_F","G_Squares_Tinted",[],["","","","","",""]], [11843.4, 2737.69, 1.19265], [-0.0193203, -0.999813, 0], [0, 0, 1]],
+["Exile_Trader_Vehicle", ["HubBriefing_think"], "Exile_Trader_Vehicle", "GreekHead_A3_08", [[],[],["hgun_Pistol_01_F","","","",["10Rnd_9x21_Mag",10],[],""],["U_C_Mechanic_01_F",[["10Rnd_9x21_Mag",3,10]]],["V_Rangemaster_belt",[]],[],"H_Construction_headset_yellow_F","G_Shades_Red",[],["","","","","",""]], [11779.9, 2791.25, 3.55375], [0.875016, 0.484095, 0], [0, 0, 1]],
+["Exile_Trader_VehicleCustoms", [], "Exile_Trader_VehicleCustoms", "AfricanHead_02", [[],[],[],["Exile_Uniform_ExileCustoms",[]],[],[],"H_Construction_basic_orange_F","G_EyeProtectors_F",[],["","","","","",""]], [11778.1, 2792.81, 4.7386], [0.992855, 0.118389, -0.0149455], [0.0160037, -0.00799289, 0.99984]]
+];
+
+{
+    private _logic = "Logic" createVehicleLocal [0, 0, 0];
+    private _trader = (_x select 0) createVehicleLocal [0, 0, 0];
+    private _animations = _x select 1;
+    
+    _logic setPosWorld (_x select 5);
+    _logic setVectorDirAndUp [_x select 6, _x select 7];
+    
+    _trader setVariable ["BIS_enableRandomization", false];
+    _trader setVariable ["BIS_fnc_animalBehaviour_disable", true];
+    _trader setVariable ["ExileAnimations", _animations];
+    _trader setVariable ["ExileTraderType", _x select 2];
+    _trader disableAI "ANIM";
+    _trader disableAI "MOVE";
+    _trader disableAI "FSM";
+    _trader disableAI "AUTOTARGET";
+    _trader disableAI "TARGET";
+    _trader disableAI "CHECKVISIBLE";
+    _trader allowDamage false;
+    _trader setFace (_x select 3);
+    _trader setUnitLoadOut (_x select 4);
+    _trader setPosWorld (_x select 5);
+    _trader setVectorDirAndUp [_x select 6, _x select 7];
+    _trader reveal _logic;
+    _trader attachTo [_logic, [0, 0, 0]];
+    _trader switchMove (_animations select 0);
+    _trader addEventHandler ["AnimDone", {_this call ExileClient_object_trader_event_onAnimationDone}];
+}
+forEach _npcs;

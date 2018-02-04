@@ -156,7 +156,7 @@ _antiflag = "Exile_Construction_Flag_Static" createvehicle _position;
 clearMagazineCargoGlobal _lootBox;
 clearWeaponCargoGlobal _lootBox;
 clearItemCargoGlobal _lootBox;
-_lootBox enableRopeAttach true; // Was false
+_lootBox enableRopeAttach false;
 _lootBox setVariable ["permaLoot",true];
 _lootBox allowDamage false;
 _lootBox setVariable ["ExileMoney", 200000,true];

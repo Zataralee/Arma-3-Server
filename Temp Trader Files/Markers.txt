@@ -1,0 +1,56 @@
+class Entities
+{
+    class Item1
+    {
+        dataType = "Marker";
+        position[] = {11793.8, 0, 2773.63};
+        name = "ExileMarker1";
+        text = "";
+        markerType = "ELLIPSE";
+        type = "ExileTraderZone";
+        colorName = "ColorBlack";
+        fillName = "Border";
+        a = 150;
+        b = 150;
+        drawBorder = 1;
+        id = 101;
+        atlOffset = 0;
+    };
+    class Item2
+    {
+        dataType = "Marker";
+        position[] = {11793.8, 0, 2773.63};
+        name = "ExileMarker2";
+        text = "";
+        type = "ExileTraderZoneIcon";
+        id = 102;
+        atlOffset = 0;
+    };
+    class Item3
+    {
+        dataType = "Marker";
+        position[] = {11711.5, 0, 3027.74};
+        name = "ExileMarker3";
+        text = "";
+        markerType = "ELLIPSE";
+        type = "ExileTraderZone";
+        colorName = "ColorBlack";
+        fillName = "Border";
+        a = 120;
+        b = 120;
+        drawBorder = 1;
+        id = 103;
+        atlOffset = 0;
+    };
+    class Item4
+    {
+        dataType = "Marker";
+        position[] = {11711.5, 0, 3027.74};
+        name = "ExileMarker4";
+        text = "";
+        type = "ExileAircraftTraderIcon";
+        id = 104;
+        atlOffset = 0;
+    };
+    items = 4;
+};
