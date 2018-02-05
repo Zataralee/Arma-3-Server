@@ -252,7 +252,7 @@ Trigger_5 = [				 //Mission Trigger
 /* 12 Loot group */          DocAndAmmo,         
 /* 13 Zombie group */        BossMode,           
 /* 14 Avoid Territory */     false,              
-/* 15 Mission Radius */      1500,               
+/* 15 Mission Radius */      3,               
 /* 16 Mission SQF */         triggerMission,    
 /* 17 Loot Box */            triggerLootbox     
 ];
