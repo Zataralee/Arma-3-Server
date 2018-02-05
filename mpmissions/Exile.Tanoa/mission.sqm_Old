@@ -27,7 +27,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items = 18;
+		items = 12;
 		class Item0
 		{
 			className = "exile_client";
@@ -113,56 +113,6 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		
-		//Trader at Saint George
-		
-		class Item12
-		{
-			className="A3_Structures_F_EPB";
-			name="Arma 3 Adapt Episode - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		
-		class Item13
-		{
-			className="A3_Props_F_Argo";
-			name="Arma 3 Malden - Decorative and Mission Objects";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item14
-		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		
-		class Item15
-		{
-			className="A3_Structures_F_Wrecks";
-			name="Arma 3 - Vehicle Wrecks";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		
-		class Item16
-		{
-			className="A3_Soft_F_Gamma";
-			name="Arma 3 - Unarmored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item17
-		{
-			className="A3_Armor_F_Exp";
-			name="Arma 3 Apex - Armored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		
-			
 	};
 };
 randomSeed = 2218544;
@@ -201,7 +151,7 @@ class Mission
 	};
 	class Entities
 	{
-		items = 62;
+		items = 60;
 
 		class Item0
 		{
@@ -209,7 +159,7 @@ class Mission
 			side = "Independent";
 			class Entities
 			{
-				items = 134;
+				items = 118;
 				class Item0
 				{
 					dataType = "Object";
@@ -1934,509 +1884,7 @@ class Mission
 					atlOffset=0.00035810471;
 				};
 				
-				//South Trader at Saint George
-				
-				class Item118
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11766.658,8.016222,2767.8857};
-						angles[]={0,6.2696586,0};
-					};
-					side="Empty";
-					class Attributes
-					{
-						init="call{this setObjectTexture [0, ""exile_assets\model\exile_sign_locker_co.paa""];}";
-						disableSimulation=1;
-					};
-					id=1968;
-					type="Land_Poster_01_F";
-					atlOffset=1.4753938;
-				};
-				class Item119
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11765.033,8.016222,2771.708};
-						angles[]={0,6.2584887,0};
-					};
-					side="Empty";
-					class Attributes
-					{
-						init="call{this setObjectTexture [0, ""exile_assets\model\exile_sign_locker_co.paa""];}";
-						disableSimulation=1;
-					};
-					id=1690;
-					type="Land_Poster_01_F";
-					atlOffset=1.4753938;
-				};
-				class Item120
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11763.373,7.3273072,2775.8601};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						disableSimulation=1;
-					};
-					id=1695;
-					type="Land_Noticeboard_F";
-					atlOffset=5.2928925e-005;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectTextureCustom0";
-							expression="_this setObjectTextureGlobal [0,_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Textures\Patreonlogo.jpeg";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item121
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11761.539,7.3273878,2775.8701};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						disableSimulation=1;
-					};
-					id=1694;
-					type="Land_Noticeboard_F";
-					atlOffset=0.0001335144;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectTextureCustom0";
-							expression="_this setObjectTextureGlobal [0,_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Textures\Discord.jpeg";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item122
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11763.803,8.016222,2776.5239};
-						angles[]={0,3.1477592,0};
-					};
-					side="Empty";
-					class Attributes
-					{
-						init="call{this setObjectTexture [0, ""exile_assets\model\exile_sign_locker_co.paa""];}";
-						disableSimulation=1;
-					};
-					id=1967;
-					type="Land_Poster_01_F";
-					atlOffset=1.4753938;
-				};
-				class Item123
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11768.325,7.4615617,2769.1731};
-						angles[]={0,4.4734883,0};
-					};
-					side="Empty";
-					class Attributes
-					{
-						disableSimulation=1;
-					};
-					id=1688;
-					type="Land_Laptop_02_unfolded_F";
-					atlOffset=0.79617167;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectTextureCustom0";
-							expression="_this setObjectTextureGlobal [0,_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Textures\computerscreen.paa";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item124
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11778.185,4.0034456,2760.1423};
-						angles[]={0,6.1747551,6.282495};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						disableSimulation=1;
-					};
-					id=1696;
-					type="Land_Noticeboard_F";
-					atlOffset=2.3841858e-007;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectTextureCustom0";
-							expression="_this setObjectTextureGlobal [0,_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Textures\Patreonlogo.jpeg";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item125
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11801.696,8.811224,2709.729};
-						angles[]={0,3.9061339,0};
-					};
-					side="Empty";
-					flags=1;
-					class Attributes
-					{
-						init="call{this setObjectTexture [1, ""Textures\SSS_LOGO.paa""];" \n "this setObjectTexture [0, ""Textures\Promo.jpeg""];" \n "}";
-						disableSimulation=1;
-					};
-					id=1658;
-					type="Land_Billboard_04_blank_F";
-					atlOffset=5.4180002;
-				};
-				class Item126
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11809.378,5.4405103,2756.7029};
-						angles[]={0,3.8763332,0};
-					};
-					side="Empty";
-					flags=1;
-					class Attributes
-					{
-						disableSimulation=1;
-					};
-					id=1893;
-					type="Banner_01_NATO_F";
-					atlOffset=1.5413437;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectTextureCustom0";
-							expression="_this setObjectTextureGlobal [0,_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="\A3\Data_F\Flags\Flag_pow_CO.paa";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item127
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11756.993,6.3907709,2947.3145};
-						angles[]={0,2.1837778,0};
-					};
-					side="Empty";
-					class Attributes
-					{
-						disableSimulation=1;
-					};
-					id=1530;
-					type="Land_Wreck_Heli_Attack_01_F";
-					atlOffset=0.42869186;
-				};
-				class Item128
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11793.924,7.144805,2747.5349};
-						angles[]={0,0.31719613,0};
-					};
-					side="Empty";
-					flags=5;
-					class Attributes
-					{
-						init="call{this setFlagTexture ""Textures\SSS_LOGO.jpeg"";}";
-						disableSimulation=1;
-					};
-					id=1970;
-					type="Flag_White_F";
-					atlOffset=0.013719559;
-				};
-				class Item129
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11744.732,6.8705425,2942.7971};
-						angles[]={0.026668631,5.0449266,0.029321531};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						lock="LOCKED";
-						createAsSimpleObject=1;
-						disableSimulation=1;
-					};
-					id=1536;
-					type="O_G_Van_01_transport_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ammoBox";
-							expression="[_this,_value] call bis_fnc_initAmmoBox;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item130
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11763.399,8.1225548,2937.3269};
-						angles[]={0.1062731,1.5341444,6.2591867};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						lock="LOCKED";
-						init="this setObjectTexture [2, """"];";
-						disableSimulation=1;
-					};
-					id=1617;
-					type="O_T_APC_Wheeled_02_rcws_ghex_F";
-					atlOffset=-0.0029993057;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ammoBox";
-							expression="[_this,_value] call bis_fnc_initAmmoBox;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item131
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11791.896,12.066007,2795.7441};
-						angles[]={3.9054186,3.1415927,5.7967443};
-					};
-					side="Empty";
-					class Attributes
-					{
-						name="wreckh";
-						createAsSimpleObject=1;
-						disableSimulation=1;
-					};
-					id=1756;
-					type="B_MRAP_01_gmg_F";
-					atlOffset=5.2719989;
-				};
-				class Item132
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11773.47,5.4417038,2740.9661};
-						angles[]={0,4.6363797,0};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						lock="LOCKED";
-						createAsSimpleObject=1;
-						disableSimulation=1;
-					};
-					id=1479;
-					type="I_Truck_02_covered_F";
-					atlOffset=-2.3841858e-007;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ammoBox";
-							expression="[_this,_value] call bis_fnc_initAmmoBox;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item133
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11764.854,5.4417038,2762.761};
-						angles[]={0,5.3485618,0};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						lock="LOCKED";
-						createAsSimpleObject=1;
-						disableSimulation=1;
-					};
-					id=1474;
-					type="I_Truck_02_covered_F";
-					atlOffset=-2.3841858e-007;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ammoBox";
-							expression="[_this,_value] call bis_fnc_initAmmoBox;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
+				//End of Trader
 				
 			};
 			class Attributes{};
@@ -3230,41 +2678,38 @@ class Mission
 	        id = 153;
 	        atlOffset = 0;
 	    };
-	    
-	//	class Item54
-	//    {
-	//        dataType = "Marker";
-	//        position[] = {11707.9, 0, 3032.66};
-	//        name = "ExileMarker54";
-	//        text = "Aircraft Trader";
-	//        markerType = "ELLIPSE";
-	//        type = "ExileNonConstructionZone";
-	//        colorName = "ColorBlack";
-	//        fillName = "Border";
-	//        alpha = 0;
-	//        a = 142.19;
-	//        b = 142.19;
-	//        drawBorder = 1;
-	//        id = 154;
-	//        atlOffset = 0;
-	//    };
-	//    
-	//	class Item55
-	//    {
-	//        dataType = "Marker";
-	//        position[] = {11707.9, 0, 3032.66};
-	//        name = "ExileMarker55";
-	//        text = "";
-	//        type = "ExileAircraftTraderIcon";
-	//       id = 155;
-	//        atlOffset = 0;
-	//    };
-		
 	    class Item54
 	    {
 	        dataType = "Marker";
-	        position[] = {11074.7, 0, 13391.8};
+	        position[] = {11707.9, 0, 3032.66};
 	        name = "ExileMarker54";
+	        text = "Aircraft Trader";
+	        markerType = "ELLIPSE";
+	        type = "ExileNonConstructionZone";
+	        colorName = "ColorBlack";
+	        fillName = "Border";
+	        alpha = 0;
+	        a = 142.19;
+	        b = 142.19;
+	        drawBorder = 1;
+	        id = 154;
+	        atlOffset = 0;
+	    };
+	    class Item55
+	    {
+	        dataType = "Marker";
+	        position[] = {11707.9, 0, 3032.66};
+	        name = "ExileMarker55";
+	        text = "";
+	        type = "ExileAircraftTraderIcon";
+	        id = 155;
+	        atlOffset = 0;
+	    };
+	    class Item56
+	    {
+	        dataType = "Marker";
+	        position[] = {11074.7, 0, 13391.8};
+	        name = "ExileMarker56";
 	        text = "Non-Construction Zone";
 	        markerType = "ELLIPSE";
 	        type = "ExileNonConstructionZone";
@@ -3274,55 +2719,26 @@ class Mission
 	        a = 600;
 	        b = 600;
 	        drawBorder = 1;
-	        id = 154;
+	        id = 156;
 	        atlOffset = 0;
 	    };
-	    class Item55
+	    class Item57
 	    {
 	        dataType = "Marker";
 	        position[] = {11074.7, 0, 13391.8};
-	        name = "ExileMarker55";
+	        name = "ExileMarker57";
 	        text = "";
 	        type = "ExileBoatTraderIcon";
-	        id = 155;
+	        id = 157;
 	        atlOffset = 0;
 	    };
 		
 		//North Trader at La Rochelle
 
-		class Item56
-		{
-			dataType = "Marker";
-			position[] = {9564.51, 0, 13607.3};
-			name = "ExileMarker56";
-			text = "";
-			markerType = "ELLIPSE";
-			type = "ExileTraderZone";
-			colorName = "ColorBlack";
-			fillName = "Border";
-			a = 150;
-			b = 150;
-			drawBorder = 1;
-			id = 156;
-			atlOffset = 0;
-		};
-		class Item57
-		{
-			dataType = "Marker";
-			position[] = {9564.51, 0, 13607.3};
-			name = "ExileMarker57";
-			text = "";
-			type = "ExileTraderZoneIcon";
-			id = 157;
-			atlOffset = 0;
-		};
-		
-		//South Trader at Saint George
-		
 		class Item58
 		{
 			dataType = "Marker";
-			position[] = {11793.8, 0, 2773.63};
+			position[] = {9564.51, 0, 13607.3};
 			name = "ExileMarker58";
 			text = "";
 			markerType = "ELLIPSE";
@@ -3338,39 +2754,14 @@ class Mission
 		class Item59
 		{
 			dataType = "Marker";
-			position[] = {11793.8, 0, 2773.63};
+			position[] = {9564.51, 0, 13607.3};
 			name = "ExileMarker59";
 			text = "";
 			type = "ExileTraderZoneIcon";
 			id = 159;
 			atlOffset = 0;
 		};
-		class Item60
-		{
-			dataType = "Marker";
-			position[] = {11711.5, 0, 3027.74};
-			name = "ExileMarker60";
-			text = "";
-			markerType = "ELLIPSE";
-			type = "ExileTraderZone";
-			colorName = "ColorBlack";
-			fillName = "Border";
-			a = 120;
-			b = 120;
-			drawBorder = 1;	
-			id = 160;
-			atlOffset = 0;
-		};
-		class Item61
-		{
-			dataType = "Marker";
-			position[] = {11711.5, 0, 3027.74};
-			name = "ExileMarker61";
-			text = "";
-			type = "ExileAircraftTraderIcon";
-			id = 161;
-			atlOffset = 0;
-		};
+		
 		
 	};
 };
