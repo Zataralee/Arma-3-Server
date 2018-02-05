@@ -201,7 +201,7 @@ class Mission
 	};
 	class Entities
 	{
-		items = 62;
+		items = 60;
 
 		class Item0
 		{
@@ -2637,7 +2637,9 @@ class Mission
 	        id = 114;
 	        atlOffset = 0;
 	    };
-	    class Item15
+	    
+		/*
+		class Item15
 	    {
 	        dataType = "Marker";
 	        position[] = {11670.7, 0, 4106.17};
@@ -2663,7 +2665,38 @@ class Mission
 	        id = 116;
 	        atlOffset = 0;
 	    };
-	    class Item17
+		*/
+	    
+		//South Trader at Saint George
+		
+		class Item15
+		{
+			dataType = "Marker";
+			position[] = {11793.8, 0, 2773.63};
+			name = "ExileMarker15";
+			text = "";
+			markerType = "ELLIPSE";
+			type = "ExileTraderZone";
+			colorName = "ColorBlack";
+			fillName = "Border";
+			a = 150;
+			b = 150;
+			drawBorder = 1;
+			id = 115;
+			atlOffset = 0;
+		};
+		class Item16
+		{
+			dataType = "Marker";
+			position[] = {11793.8, 0, 2773.63};
+			name = "ExileMarker16";
+			text = "";
+			type = "ExileTraderZoneIcon";
+			id = 116;
+			atlOffset = 0;
+		};
+		
+		class Item17
 	    {
 	        dataType = "Marker";
 	        position[] = {10806.4, 0, 6388.1};
@@ -3317,39 +3350,12 @@ class Mission
 			atlOffset = 0;
 		};
 		
-		//South Trader at Saint George
 		
 		class Item58
 		{
 			dataType = "Marker";
-			position[] = {11793.8, 0, 2773.63};
-			name = "ExileMarker58";
-			text = "";
-			markerType = "ELLIPSE";
-			type = "ExileTraderZone";
-			colorName = "ColorBlack";
-			fillName = "Border";
-			a = 150;
-			b = 150;
-			drawBorder = 1;
-			id = 158;
-			atlOffset = 0;
-		};
-		class Item59
-		{
-			dataType = "Marker";
-			position[] = {11793.8, 0, 2773.63};
-			name = "ExileMarker59";
-			text = "";
-			type = "ExileTraderZoneIcon";
-			id = 159;
-			atlOffset = 0;
-		};
-		class Item60
-		{
-			dataType = "Marker";
 			position[] = {11711.5, 0, 3027.74};
-			name = "ExileMarker60";
+			name = "ExileMarker58";
 			text = "";
 			markerType = "ELLIPSE";
 			type = "ExileTraderZone";
@@ -3358,17 +3364,17 @@ class Mission
 			a = 120;
 			b = 120;
 			drawBorder = 1;	
-			id = 160;
+			id = 158;
 			atlOffset = 0;
 		};
-		class Item61
+		class Item59
 		{
 			dataType = "Marker";
 			position[] = {11711.5, 0, 3027.74};
-			name = "ExileMarker61";
+			name = "ExileMarker59";
 			text = "";
 			type = "ExileAircraftTraderIcon";
-			id = 161;
+			id = 159;
 			atlOffset = 0;
 		};
 		
