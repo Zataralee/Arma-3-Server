@@ -156,10 +156,10 @@ _antiflag = "Exile_Construction_Flag_Static" createvehicle _position;
 clearMagazineCargoGlobal _lootBox;
 clearWeaponCargoGlobal _lootBox;
 clearItemCargoGlobal _lootBox;
-_lootBox enableRopeAttach false;
+_lootBox enableRopeAttach true;
 _lootBox setVariable ["permaLoot",true];
 _lootBox allowDamage false;
-_lootBox setVariable ["ExileMoney", 200000,true];
+_lootBox setVariable ["ExileMoney", 2000000,true];
 
 for "_i" from 1 to _lootqte do {
 	_item = _items call BIS_fnc_selectRandom;

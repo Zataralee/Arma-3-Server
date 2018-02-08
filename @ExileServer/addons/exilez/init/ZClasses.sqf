@@ -82,9 +82,9 @@ Hardcore = [
 ];
 
 BossMode = [
-[mediumCivilians,	50],
-[mediumSoldiers,	40],
+[mediumCivilians,	10],
+[mediumSoldiers,	20],
 [fastCivilians,	    30],
-[fastSoldiers,	    20],
-[boss,				10]
+[fastSoldiers,	    50],
+[boss,				50]
 ];
