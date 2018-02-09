@@ -201,7 +201,7 @@ class Mission
 	};
 	class Entities
 	{
-		items = 60;
+		items = 58;
 
 		class Item0
 		{
@@ -3056,6 +3056,7 @@ class Mission
 	        atlOffset = 0;
 	    };
 	    
+		/*
 		class Item41
 	    {
 	        dataType = "Marker";
@@ -3082,7 +3083,7 @@ class Mission
 	        id = 142;
 	        atlOffset = 0;
 	    };
-		
+		*/
 		
 		//class Item43
 	    //{
@@ -3111,12 +3112,13 @@ class Mission
 	    //    id = 144;
 	    //    atlOffset = 0;
 	    //};
+		
 		// South Airport Trader
-		class Item43
+		class Item41
 		{
 			dataType = "Marker";
 			position[] = {6885.71, 0, 7463.28};
-			name = "ExileMarker43";
+			name = "ExileMarker41";
 			text = "";
 			markerType = "ELLIPSE";
 			type = "ExileTraderZone";
@@ -3125,25 +3127,25 @@ class Mission
 			a = 150;
 			b = 150;
 			drawBorder = 1;
-			id = 143;
+			id = 141;
 			atlOffset = 0;
 		};
-		class Item44
+		class Item42
 		{
 			dataType = "Marker";
 			position[] = {6885.71, 0, 7463.28};
-			name = "ExileMarker44";
+			name = "ExileMarker42";
 			text = "";
 			type = "ExileTraderZoneIcon";
-			id = 144;
+			id = 142;
 			atlOffset = 0;
 		};
 		
-	    class Item45
+	    class Item43
 	    {
 	        dataType = "Marker";
 	        position[] = {2161.18, 0, 3481.5};
-	        name = "ExileMarker45";
+	        name = "ExileMarker43";
 	        text = "";
 	        markerType = "ELLIPSE";
 	        type = "ExileNonConstructionZone";
@@ -3153,24 +3155,24 @@ class Mission
 	        a = 400;
 	        b = 400;
 	        drawBorder = 1;
-	        id = 145;
+	        id = 143;
 	        atlOffset = 0;
 	    };
-	    class Item46
+	    class Item44
 	    {
 	        dataType = "Marker";
 	        position[] = {2161.18, 0, 3481.5};
-	        name = "ExileMarker46";
+	        name = "ExileMarker44";
 	        text = "";
 	        type = "ExileAircraftTraderIcon";
-	        id = 146;
+	        id = 144;
 	        atlOffset = 0;
 	    };
-	    class Item47
+	    class Item45
 	    {
 	        dataType = "Marker";
 	        position[] = {9668.96, 0, 13569.2};
-	        name = "ExileMarker47";
+	        name = "ExileMarker45";
 	        text = "Non-Construction Zone";
 	        markerType = "ELLIPSE";
 	        type = "ExileNonConstructionZone";
@@ -3180,14 +3182,14 @@ class Mission
 	        a = 500;
 	        b = 500;
 	        drawBorder = 1;
-	        id = 147;
+	        id = 145;
 	        atlOffset = 0;
 	    };
-	    class Item48
+	    class Item46
 	    {
 	        dataType = "Marker";
 	        position[] = {5010.64, 0, 8724.12};
-	        name = "ExileMarker48";
+	        name = "ExileMarker46";
 	        text = "Regina";
 	        markerType = "ELLIPSE";
 	        type = "ExileSpawnZone";
@@ -3197,24 +3199,24 @@ class Mission
 	        a = 472.33;
 	        b = 472.33;
 	        drawBorder = 1;
-	        id = 148;
+	        id = 146;
 	        atlOffset = 0;
 	    };
-	    class Item49
+	    class Item47
 	    {
 	        dataType = "Marker";
 	        position[] = {5010.64, 0, 8724.12};
-	        name = "ExileMarker49";
+	        name = "ExileMarker47";
 	        text = "";
 	        type = "ExileSpawnZoneIcon";
-	        id = 149;
+	        id = 147;
 	        atlOffset = 0;
 	    };
-	    class Item50
+	    class Item48
 	    {
 	        dataType = "Marker";
 	        position[] = {8904.1, 0, 13795.4};
-	        name = "ExileMarker50";
+	        name = "ExileMarker48";
 	        text = "Non-Construction Zone";
 	        markerType = "ELLIPSE";
 	        type = "ExileNonConstructionZone";
@@ -3224,14 +3226,14 @@ class Mission
 	        a = 400;
 	        b = 400;
 	        drawBorder = 1;
-	        id = 150;
+	        id = 148;
 	        atlOffset = 0;
 	    };
-	    class Item51
+	    class Item49
 	    {
 	        dataType = "Marker";
 	        position[] = {7991.1, 0, 12411.6};
-	        name = "ExileMarker51";
+	        name = "ExileMarker49";
 	        text = "";
 	        markerType = "ELLIPSE";
 	        type = "ExileTraderZone";
@@ -3240,27 +3242,27 @@ class Mission
 	        a = 200;
 	        b = 200;
 	        drawBorder = 1;
-	        id = 151;
+	        id = 149;
 	        atlOffset = 0;
 	    };
-	    class Item52
+	    class Item50
 	    {
 	        dataType = "Marker";
 	        position[] = {7991.1, 0, 12411.6};
-	        name = "ExileMarker52";
+	        name = "ExileMarker50";
 	        text = "";
 	        type = "ExileTraderZoneIcon";
-	        id = 152;
+	        id = 150;
 	        atlOffset = 0;
 	    };
-	    class Item53
+	    class Item51
 	    {
 	        dataType = "Marker";
 	        position[] = {5409.88, 0, 10940.7};
-	        name = "ExileMarker53";
+	        name = "ExileMarker51";
 	        text = "";
 	        type = "ExileBoatTraderIcon";
-	        id = 153;
+	        id = 151;
 	        atlOffset = 0;
 	    };
 	    
@@ -3293,11 +3295,11 @@ class Mission
 	//        atlOffset = 0;
 	//    };
 		
-	    class Item54
+	    class Item52
 	    {
 	        dataType = "Marker";
 	        position[] = {11074.7, 0, 13391.8};
-	        name = "ExileMarker54";
+	        name = "ExileMarker52";
 	        text = "Non-Construction Zone";
 	        markerType = "ELLIPSE";
 	        type = "ExileNonConstructionZone";
@@ -3307,27 +3309,27 @@ class Mission
 	        a = 600;
 	        b = 600;
 	        drawBorder = 1;
-	        id = 154;
+	        id = 152;
 	        atlOffset = 0;
 	    };
-	    class Item55
+	    class Item53
 	    {
 	        dataType = "Marker";
 	        position[] = {11074.7, 0, 13391.8};
-	        name = "ExileMarker55";
+	        name = "ExileMarker53";
 	        text = "";
 	        type = "ExileBoatTraderIcon";
-	        id = 155;
+	        id = 153;
 	        atlOffset = 0;
 	    };
 		
 		//North Trader at La Rochelle
 
-		class Item56
+		class Item54
 		{
 			dataType = "Marker";
 			position[] = {9564.51, 0, 13607.3};
-			name = "ExileMarker56";
+			name = "ExileMarker54";
 			text = "";
 			markerType = "ELLIPSE";
 			type = "ExileTraderZone";
@@ -3336,26 +3338,26 @@ class Mission
 			a = 150;
 			b = 150;
 			drawBorder = 1;
-			id = 156;
+			id = 154;
 			atlOffset = 0;
 		};
-		class Item57
+		class Item55
 		{
 			dataType = "Marker";
 			position[] = {9564.51, 0, 13607.3};
-			name = "ExileMarker57";
+			name = "ExileMarker55";
 			text = "";
 			type = "ExileTraderZoneIcon";
-			id = 157;
+			id = 155;
 			atlOffset = 0;
 		};
 		
 		
-		class Item58
+		class Item56
 		{
 			dataType = "Marker";
 			position[] = {11711.5, 0, 3027.74};
-			name = "ExileMarker58";
+			name = "ExileMarker56";
 			text = "";
 			markerType = "ELLIPSE";
 			type = "ExileTraderZone";
@@ -3364,17 +3366,17 @@ class Mission
 			a = 120;
 			b = 120;
 			drawBorder = 1;	
-			id = 158;
+			id = 156;
 			atlOffset = 0;
 		};
-		class Item59
+		class Item57
 		{
 			dataType = "Marker";
 			position[] = {11711.5, 0, 3027.74};
-			name = "ExileMarker59";
+			name = "ExileMarker57";
 			text = "";
 			type = "ExileAircraftTraderIcon";
-			id = 159;
+			id = 157;
 			atlOffset = 0;
 		};
 		
