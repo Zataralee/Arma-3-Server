@@ -2559,6 +2559,14 @@ class CfgInteractionMenus
                 condition = "call ExileClient_object_vehicle_interaction_show";
                 action = "_this call ExileClient_object_vehicle_Repair";
             };
+			
+			// Salvage a vehicle
+            class Salvage: ExileAbstractAction
+            {
+                title = "Salvage Vehicle";
+                condition = "(!(alive (ExileClientInteractionObject)))";
+                action = "_this call SV_fnc_SalvageVehicle";
+            };
 
             // Hot-wires a vehicle
             class Hotwire: ExileAbstractAction
@@ -2675,6 +2683,14 @@ class CfgInteractionMenus
 				condition = "call ExileClient_object_vehicle_interaction_show";
 				action = "[ExileClientInteractionObject,-15] call ExileClient_object_vehicle_rotate";
 			};
+			
+			// Salvage a vehicle
+            class Salvage: ExileAbstractAction
+            {
+                title = "Salvage Vehicle";
+                condition = "(!(alive (ExileClientInteractionObject)))";
+                action = "_this call SV_fnc_SalvageVehicle";
+            };
 
 			class RotateRight: ExileAbstractAction
 			{
