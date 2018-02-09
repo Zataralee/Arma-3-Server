@@ -241,7 +241,7 @@ Trigger_5 = [				 //Mission Trigger
 /* 1  Trigger Positions */   Mission,            
 /* 2  Max Zombies */         10,                 
 /* 3  Activation Delay */    1,                  
-/* 4  Spawn Delay */         5,                  
+/* 4  Spawn Delay */         1,                  
 /* 5  Respawn Delay */       5,                  
 /* 6  Show Trigger On Map */ true,               
 /* 7  Marker Color */        "ColorRed",      

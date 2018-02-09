@@ -35,7 +35,7 @@
                         
 	Mission = [             
 						//	[2901.51,12333.8,300]        // Mission (Contaminated Zone)
-							[2489.71,13337.4,200]		//Custom Mission Made by Saber
+							[2489.71,13337.4,300]		//Custom Mission Made by Saber
 				];
 //
 //Towns = [
