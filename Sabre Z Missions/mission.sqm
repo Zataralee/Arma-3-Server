@@ -1,0 +1,290 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=507;
+	};
+	class Camera
+	{
+		pos[]={2302.2803,50.781212,13386.582};
+		dir[]={0.85325217,-0.24438314,-0.46093962};
+		up[]={0.21529476,0.96959692,-0.11630265};
+		aside[]={-0.47535282,1.7705825e-006,-0.87992793};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Static_F_AA_01"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=2;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Static_F";
+			name="Arma 3 Alpha - Turrets";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=11699555;
+class ScenarioData
+{
+	author="Sabre One";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogBase=250;
+		forecastFogBase=250;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=6;
+		class Item0
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2417.9805,12.511802,13542.4};
+						angles[]={6.2817922,3.3453195,6.2236457};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=475;
+					type="O_Soldier_F";
+					atlOffset=0.0072546005;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=475;
+						item1=474;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=473;
+			atlOffset=0.0070199966;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2417.9229,13.491853,13542.34};
+				angles[]={6.2817922,3.3453195,6.2236457};
+			};
+			side="East";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=474;
+			type="O_static_AA_F";
+			atlOffset=0.0070199966;
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1769.2719,16.979927,13018.424};
+						angles[]={6.2281342,1.4565735,0.012492738};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=478;
+					type="O_Soldier_F";
+					atlOffset=-5.7220459e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=478;
+						item1=477;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=476;
+			atlOffset=-5.7220459e-006;
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1769.3242,17.960157,13018.355};
+				angles[]={6.2281342,1.4565735,0.012492738};
+			};
+			side="East";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=477;
+			type="O_static_AA_F";
+			atlOffset=-5.7220459e-006;
+		};
+		class Item4
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2454.8328,25.98855,13305.884};
+						angles[]={6.2808404,5.1492796,6.2465825};
+					};
+					side="East";
+					flags=2;
+					class Attributes
+					{
+					};
+					id=506;
+					type="O_Soldier_F";
+					atlOffset=12.855573;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=506;
+						item1=505;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=504;
+			atlOffset=12.855573;
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2454.8459,26.969685,13305.801};
+				angles[]={6.2808404,5.1492796,6.2465825};
+			};
+			side="East";
+			flags=2;
+			class Attributes
+			{
+			};
+			id=505;
+			type="O_static_AA_F";
+			atlOffset=12.855573;
+		};
+	};
+};
