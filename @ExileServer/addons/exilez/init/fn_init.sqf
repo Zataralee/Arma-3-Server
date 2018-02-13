@@ -14,8 +14,8 @@ CorpseDeleteDelay            = 5;              // delay before a zombie corpse i
 Debug                        = true;             // debug messages.
 MinSpawnDistance             = 10;               // Closest distance from any player to spawn a zombie.
 MaxSpawnDistance             = 50;              // Max distance a zombie should spawn from a player.
-MaxDistance			         = 150;              // Max distance to players before delete.
-MaxTime                      = 5;               // Max time away from a player before delete.
+MaxDistance			         = 60;              // Max distance to players before delete.
+MaxTime                      = 1;               // Max time away from a player before delete.
 RemoveZfromTraders			= true;             // Will kill zombies when they get too close to a safezone. *(the check is done every MaxTime) will only work with zombies that are configured to avoid territories
 RemoveZfromTerritory         = false;             // Will kill zombies when they get too close to a flag. *(the check is done every MaxTime) will only work with zombies that are configured to avoid territories
 TriggerGroupScaling          = 0.25;             // 1 player = Groupsize, 2 player in trigger = Groupsize + (GroupSize * TriggerGroupScalling * number of player in the trigger) set at 0 to disable scaling
@@ -239,10 +239,10 @@ Trigger_4 = [				 //No Man Land
 Trigger_5 = [				 //Mission Trigger
 /* 0  Use this trigger */    True,               
 /* 1  Trigger Positions */   Mission,            
-/* 2  Max Zombies */         15,                 
+/* 2  Max Zombies */         10,                 
 /* 3  Activation Delay */    5,                  
 /* 4  Spawn Delay */         1,                  
-/* 5  Respawn Delay */       0,                  
+/* 5  Respawn Delay */       3,                  
 /* 6  Show Trigger On Map */ true,               
 /* 7  Marker Color */        "ColorRed",      
 /* 8  MarkerBrush */         "Solid",            
