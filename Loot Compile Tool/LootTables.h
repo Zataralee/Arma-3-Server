@@ -117,6 +117,7 @@
 5, IndustrialItems
 6, Trash
 8, Vehicle
+20, RaidingItems
 
 ///////////////////////////////////////////////////////////////////////////////
 // Towers, Barracks, Hangars etc.
@@ -157,6 +158,7 @@
 5, GuerillaClothing
 5, MilitaryClothing
 5, Rifles
+20, RaidingItems
 100, Trash
 // 1, RaidingItems    To be added when we sort the weighting out.
 

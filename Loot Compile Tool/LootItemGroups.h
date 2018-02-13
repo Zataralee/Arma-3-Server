@@ -939,8 +939,8 @@
 > RaidingItems  
 //I'm unsure how the weighting system works. All of these items are unweighted still!
 //I need further testing. Need to know if 'grinded' locks come back after restart. Effects the rarity of batteries A LOT.
-1, Exile_Magazine_Battery //Should be treated as an uncommon resource **hard to spot on ground** **Takes 11 for concrete**
-1, Exile_Item_ThermalScannerPro //Should be treated as a rare 'bonus' item 
-1, DemoCharge_Remote_Mag //Needs to be the majority of raiding items.
-1, Exile_Item_MobilePhone //Needs to be rarer than batteries. **Takes 3 to blow a concrete wall**
-1, Exile_Item_ZipTie //Should be fairly common **Takes 1 per BigMomma/3 to blow a concrete wall**
+10, Exile_Magazine_Battery //Should be treated as an uncommon resource **hard to spot on ground** **Takes 11 for concrete**
+5, Exile_Item_ThermalScannerPro //Should be treated as a rare 'bonus' item 
+50, DemoCharge_Remote_Mag //Needs to be the majority of raiding items.
+10, Exile_Item_MobilePhone //Needs to be rarer than batteries. **Takes 3 to blow a concrete wall**
+25, Exile_Item_ZipTie //Should be fairly common **Takes 1 per BigMomma/3 to blow a concrete wall**
