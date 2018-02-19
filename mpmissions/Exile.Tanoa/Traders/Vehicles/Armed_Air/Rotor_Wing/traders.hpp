@@ -54,6 +54,8 @@ class Armed_Rotor_Wing
 			"CUP_O_Mi24_Mk4_CSAT_T",
 			"B_Heli_Attack_01_F",
 			"O_Heli_Attack_02_F"
-			
+			"B_CTRG_Heli_Transport_01_sand_F",
+			"B_CTRG_Heli_Transport_01_tropic_F",	
+			"B_Heli_Transport_01_camo_F"
 		};
 	};
