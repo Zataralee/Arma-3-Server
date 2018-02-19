@@ -7,12 +7,12 @@
 ///////////////////////////////////////////////////////////////////////////////
 // F-35B Lightning II
 ///////////////////////////////////////////////////////////////////////////////
-class CUP_B_F35B_AA_USMC                                            { quality = 6; price = 700000; };
-class CUP_B_F35B_CAS_USMC                                           { quality = 6; price = 700000; };
-class CUP_B_F35B_LGB_USMC                                           { quality = 6; price = 700000; };
-class CUP_B_F35B_AA_BAF                                             { quality = 6; price = 700000; };
-class CUP_B_F35B_CAS_BAF                                            { quality = 6; price = 700000; };
-class CUP_B_F35B_LGB_BAF                                            { quality = 6; price = 700000; };
+class CUP_B_F35B_AA_USMC                                            { quality = 9; price = 900000; };
+class CUP_B_F35B_CAS_USMC                                           { quality = 9; price = 900000; };
+class CUP_B_F35B_LGB_USMC                                           { quality = 9; price = 900000; };
+class CUP_B_F35B_AA_BAF                                             { quality = 9; price = 900000; };
+class CUP_B_F35B_CAS_BAF                                            { quality = 9; price = 900000; };
+class CUP_B_F35B_LGB_BAF                                            { quality = 9; price = 900000; };
 
 ///////////////////////////////////////////////////////////////////////////////
 // L-39 Albatros
@@ -23,14 +23,14 @@ class CUP_B_L39_BMB_CZ                                              { quality = 
 ///////////////////////////////////////////////////////////////////////////////
 // SU-34 Sukhoi
 ///////////////////////////////////////////////////////////////////////////////
-class CUP_B_SU34_LGB_CDF                                            { quality = 6; price = 700000; };
-class CUP_B_SU34_AGM_CDF                                            { quality = 6; price = 700000; };
+class CUP_B_SU34_LGB_CDF                                            { quality = 8; price = 700000; };
+class CUP_B_SU34_AGM_CDF                                            { quality = 8; price = 700000; };
 
 ///////////////////////////////////////////////////////////////////////////////
 // A-10 Thunderbolt II
 ///////////////////////////////////////////////////////////////////////////////
-class CUP_B_A10_CAS_USA                                             { quality = 6; price = 850000; };
-class CUP_B_A10_AT_USA                                              { quality = 6; price = 850000; };
+class CUP_B_A10_CAS_USA                                             { quality = 9; price = 1550000; };
+class CUP_B_A10_AT_USA                                              { quality = 9; price = 1550000; };
 
 ///////////////////////////////////////////////////////////////////////////////
 // AV-8B Harrier II
@@ -44,7 +44,7 @@ class CUP_B_AV8B_AGM_USMC                                           { quality = 
 // GR-9 Harrier
 ///////////////////////////////////////////////////////////////////////////////
 class CUP_B_GR9_CAP_GB                                        	    { quality = 6; price = 700000; };
-class CUP_B_GR9_Mk82_GB                                         	  { quality = 6; price = 700000; };
+class CUP_B_GR9_Mk82_GB                                         	{ quality = 6; price = 700000; };
 class CUP_B_GR9_GBU12_GB                                            { quality = 6; price = 700000; };
 class CUP_B_GR9_AGM_GB                                              { quality = 6; price = 700000; };
 
