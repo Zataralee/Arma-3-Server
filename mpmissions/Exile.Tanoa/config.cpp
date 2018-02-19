@@ -3317,7 +3317,7 @@ class CfgPlayer
 	thirstDecay = 120;
 
 	// Damage taken from 0 (health||thirst)/sec
-	healthDecay = 5.0;
+	healthDecay = 3.0;
 
 	// Health regen if over BOTH
 	thirstRegen = 60;
