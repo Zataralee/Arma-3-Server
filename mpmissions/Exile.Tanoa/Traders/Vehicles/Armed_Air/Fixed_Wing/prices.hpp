@@ -29,8 +29,8 @@ class CUP_B_SU34_AGM_CDF                                            { quality = 
 ///////////////////////////////////////////////////////////////////////////////
 // A-10 Thunderbolt II
 ///////////////////////////////////////////////////////////////////////////////
-class CUP_B_A10_CAS_USA                                             { quality = 9; price = 1550000; };
-class CUP_B_A10_AT_USA                                              { quality = 9; price = 1550000; };
+class CUP_B_A10_CAS_USA                                             { quality = 9; price = 875000; };
+class CUP_B_A10_AT_USA                                              { quality = 9; price = 875000; };
 
 ///////////////////////////////////////////////////////////////////////////////
 // AV-8B Harrier II
