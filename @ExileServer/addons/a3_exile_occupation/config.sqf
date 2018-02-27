@@ -207,10 +207,10 @@ SC_occupyHeliCrashesLocations	= [
                                 ];
 SC_HeliCrashesOnFire			= true;                 	// true if you want the crash on fire, false if you just want smoke
 SC_SpawnHeliCrashGuards			= true;						// true if you want to enable AI guards
-SC_numberofHeliCrashes      	= 3;						// if SC_occupyHeliCrashes = true spawn this many Heli Crashes
-SC_HeliCrashGuards          	= 6;                    	// number of AI to spawn at each crate
+SC_numberofHeliCrashes      	= 6;						// if SC_occupyHeliCrashes = true spawn this many Heli Crashes
+SC_HeliCrashGuards          	= 4;                    	// number of AI to spawn at each crate
 SC_HeliCrashGuardsRandomize 	= true;                 	// Use a random number of guards up to a maximum = SC_HeliCrashGuards (so between 1 and SC_HeliCrashGuards)
-SC_HeliCrashMarkers				= false;						// true if you want to have markers on the Heli Crashes
+SC_HeliCrashMarkers				= true;						// true if you want to have markers on the Heli Crashes
 
 // Array of possible common items to go in heli crash crates ["classname",fixed amount,random amount] NOT INCLUDING WEAPONS
 // ["HandGrenade",0,2] this example would add between 0 and 2 HandGrenade to the crate (fixed 0 plus 0-2 random)
@@ -484,10 +484,10 @@ SC_SurvivorVehicleClassToUseRare		=   [
 																					
 // Settings for roaming airborne AI (non armed helis will just fly around)
 SC_maxNumberofHelis		    	= 1;
-SC_occupySkyVehicleIgnoreCount		= false;	// true if you want spawn vehicles regardless of overall AI count
+SC_occupySkyVehicleIgnoreCount		= true;	// true if you want spawn vehicles regardless of overall AI count
 
 // Array of aircraft which can be used by AI patrols (the number next to next vehicle is the maximum amount of that class allowed, 0 for no limit)
-SC_HeliClassToUse 		    	=   [ ["Exile_Chopper_Huey_Armed_Green",0] ];
+SC_HeliClassToUse 		    	=   [ ["CUP_B_AH1Z_USMC",0], ["O_Heli_Attack_02_F",0] ];
 
 SC_occupyHeliUseFixedPos		= false;		// True if you want to specify the patrol positions and radius of the area to patrol / false for random
 
@@ -870,9 +870,9 @@ if (SC_debug) then
     SC_occupyLootCrates			= false;
     SC_occupyHeliCrashes		= false;
 	SC_maxAIcount				= 150;	
-    SC_maxNumberofVehicles		= 10;
+    SC_maxNumberofVehicles		= 5;
     SC_maxNumberofBoats			= 5;
-    SC_maxNumberofHelis			= 1; 
+    SC_maxNumberofHelis			= 5; 
 	SC_randomSpawnChance		= 100;
 	SC_randomSpawnIgnoreCount	= false;
 	SC_randomSpawnFrequency		= 120;
